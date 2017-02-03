@@ -1,5 +1,6 @@
 # all garbages file
 *~
+*.bak
 
 # phpstorm project files
 .idea

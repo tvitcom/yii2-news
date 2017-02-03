@@ -4,12 +4,15 @@ $params = require(__DIR__ . '/params.php');
 
 $config = [
     'id' => 'basic',
+    'name' => 'Yii2-news',
+    'language' => 'ru-RU', // set target language to be Russian
+    'sourceLanguage' => 'en-US', // set source language to be English
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-            'cookieValidationKey' => 'dkh5KSy4bnwmVMeJZY1_S9sSZoFhF2Nk',
+            'cookieValidationKey' => 'dkR5KSy4bnwmVMeJZY1_S9sSZoFhF2Nk',
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
@@ -38,14 +41,14 @@ $config = [
             ],
         ],
         'db' => require(__DIR__ . '/db.php'),
-        /*
-        'urlManager' => [
-            'enablePrettyUrl' => true,
-            'showScriptName' => false,
-            'rules' => [
-            ],
-        ],
-        */
+    /*
+      'urlManager' => [
+      'enablePrettyUrl' => true,
+      'showScriptName' => false,
+      'rules' => [
+      ],
+      ],
+     */
     ],
     'params' => $params,
 ];
