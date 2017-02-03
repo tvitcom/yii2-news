@@ -1,6 +1,6 @@
 <?php
 
-namespace common\models;
+namespace app\models;
 
 use Yii;
 use yii\base\NotSupportedException;
@@ -9,23 +9,24 @@ use yii\db\ActiveRecord;
 use yii\web\IdentityInterface;
 
 /**
- * User model
+ * This is the model class for table "person".
  *
- * @property integer $id
- * @property string $phone
+ * @property string $id
+ * @property string $username
+ * @property string $auth_key
  * @property string $pass_hash
  * @property string $password_reset_token
  * @property string $email
- * @property string $auth_key
+ * @property string $messenger
  * @property integer $status
- * @property integer $created_at
- * @property integer $updated_at
- * @property string $password write-only password
+ * @property string $created_at
+ * @property string $last_visit
+ * @property string $type_notify
+ * @property string $notify_about
+ *
+ * @property Posts[] $posts
  */
-class User extends ActiveRecord implements IdentityInterface {
-
-    const STATUS_DELETED = 0;
-    const STATUS_ACTIVE = 10;
+class Person extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface {
 
     /**
      * @inheritdoc
@@ -37,19 +38,59 @@ class User extends ActiveRecord implements IdentityInterface {
     /**
      * @inheritdoc
      */
-    public function behaviors() {
+    public function rules() {
         return [
-            TimestampBehavior::className(),
+            [['username', 'pass_hash', 'email', 'created_at', 'last_visit'], 'required'],
+            //[['status'], 'integer'],
+            ['status', 'default', 'value' => self::STATUS_ACTIVE],
+            ['status', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_DELETED]],
+            [['created_at', 'last_visit'], 'safe'],
+            [['username'], 'string', 'max' => 255],
+            [['auth_key'], 'string', 'max' => 32],
+            [['pass_hash', 'email'], 'string', 'max' => 64],
+            [['password_reset_token'], 'string', 'max' => 128],
+            [['messenger', 'type_notify', 'notify_about'], 'string', 'max' => 45],
         ];
     }
 
     /**
      * @inheritdoc
      */
-    public function rules() {
+    public function attributeLabels() {
         return [
-            ['status', 'default', 'value' => self::STATUS_ACTIVE],
-            ['status', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_DELETED]],
+            'id' => Yii::t('app', 'ID'),
+            'username' => Yii::t('app', 'Username'),
+            'auth_key' => Yii::t('app', 'Auth Key'),
+            'pass_hash' => Yii::t('app', 'Pass Hash'),
+            'password_reset_token' => Yii::t('app', 'Password Reset Token'),
+            'email' => Yii::t('app', 'Email'),
+            'messenger' => Yii::t('app', 'Messenger'),
+            'status' => Yii::t('app', 'Status'),
+            'created_at' => Yii::t('app', 'Created At'),
+            'last_visit' => Yii::t('app', 'Last Visit'),
+            'type_notify' => Yii::t('app', 'Type Notify'),
+            'notify_about' => Yii::t('app', 'Notify About'),
+        ];
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getPosts() {
+        return $this->hasMany(Posts::className(), ['author_id' => 'id']);
+    }
+
+    /* -------- PART FOR AUTHENTICATION USER IN APPLICATION ---- */
+
+    const STATUS_DELETED = 0;
+    const STATUS_ACTIVE = 10;
+
+    /**
+     * @inheritdoc
+     */
+    public function behaviors() {
+        return [
+            TimestampBehavior::className(),
         ];
     }
 
@@ -73,8 +114,8 @@ class User extends ActiveRecord implements IdentityInterface {
      * @param string $phone
      * @return static|null
      */
-    public static function findByUsername($phone) {
-        return static::findOne(['phone' => $phone, 'status' => self::STATUS_ACTIVE]);
+    public static function findByUsername($username) {
+        return static::findOne(['username' => $username, 'status' => self::STATUS_ACTIVE]);
     }
 
     /**
@@ -89,8 +130,8 @@ class User extends ActiveRecord implements IdentityInterface {
         }
 
         return static::findOne([
-                    'password_reset_token' => $token,
-                    'status' => self::STATUS_ACTIVE,
+                'password_reset_token' => $token,
+                'status' => self::STATUS_ACTIVE,
         ]);
     }
 
@@ -135,7 +176,7 @@ class User extends ActiveRecord implements IdentityInterface {
      * @inheritdoc
      */
     public function setUsername($username) {
-        return $this->phone = $username;
+        return $this->username = $username;
     }
 
     /**
