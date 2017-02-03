@@ -66,6 +66,10 @@ class SiteController extends Controller {
      * @return string
      */
     public function actionRegister() {
+        if (!Yii::$app->user->isGuest) {
+            return $this->goHome();
+        }
+
         return $this->render('registration');
     }
 
@@ -115,13 +119,5 @@ class SiteController extends Controller {
       return $this->render('contact', [
       'model' => $model,
       ]);
-      } */
-    /**
-     * Displays about page.
-     *
-     * @return string
-
-      public function actionAbout() {
-      return $this->render('about');
       } */
 }
