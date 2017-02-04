@@ -3,11 +3,16 @@
 namespace app\controllers;
 
 use Yii;
-use yii\filters\AccessControl;
 use yii\web\Controller;
+use yii\base\InvalidParamException;
+use yii\web\BadRequestHttpException;
 use yii\filters\VerbFilter;
+use yii\filters\AccessControl;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\models\PasswordResetRequestForm;
+use app\models\ResetPasswordForm;
+use app\models\SignupForm;
 
 class SiteController extends Controller {
 
@@ -18,8 +23,13 @@ class SiteController extends Controller {
         return [
             'access' => [
                 'class' => AccessControl::className(),
-                'only' => ['logout'],
+                'only' => ['logout', 'register'],
                 'rules' => [
+                    [
+                        'actions' => ['register'],
+                        'allow' => true,
+                        'roles' => ['?'],
+                    ],
                     [
                         'actions' => ['logout'],
                         'allow' => true,
@@ -61,16 +71,23 @@ class SiteController extends Controller {
     }
 
     /**
-     * Displays homepage.
+     * Signs user up.
      *
-     * @return string
+     * @return mixed
      */
     public function actionRegister() {
-        if (!Yii::$app->user->isGuest) {
-            return $this->goHome();
+        $model = new SignupForm();
+        if ($model->load(Yii::$app->request->post())) {
+            if ($user = $model->signup()) {
+                if (Yii::$app->getUser()->login($user)) {
+                    return $this->goHome();
+                }
+            }
         }
 
-        return $this->render('registration');
+        return $this->render('signup', [
+                'model' => $model,
+        ]);
     }
 
     /**
@@ -88,6 +105,28 @@ class SiteController extends Controller {
             return $this->goBack();
         }
         return $this->render('login', [
+                'model' => $model,
+        ]);
+    }
+
+    /**
+     * Requests password reset.
+     *
+     * @return mixed
+     */
+    public function actionRecoveryPassword() {
+        $model = new PasswordResetRequestForm();
+        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+            if ($model->sendEmail()) {
+                Yii::$app->session->setFlash('success', 'Check your email for further instructions.');
+
+                return $this->goHome();
+            } else {
+                Yii::$app->session->setFlash('error', 'Sorry, we are unable to reset password for email provided.');
+            }
+        }
+
+        return $this->render('requestPasswordResetToken', [
                 'model' => $model,
         ]);
     }

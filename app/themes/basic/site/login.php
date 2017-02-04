@@ -12,8 +12,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="site-login">
     <h1><?= Html::encode($this->title) ?> or <?= Html::a('signup', ['/site/register']) ?></h1>
 
-    <p>Please fill out the following fields to login: <?= Yii::$app->security->generatePasswordHash('pass_to_news'); ?></p>
-    <p>Result: <?= (Yii::$app->security->validatePassword('pass_to_news', '$2y$13$1NPxYA7nIyZwXccK0peU.ufk27DtPnd9mcjOBcYpiXg60D4GQOID2') > 0) ? 'ravno' : 'not'; ?></p>
+    <p>Please fill out the follow fields:</p>
 
     <?php
     $form = ActiveForm::begin([
@@ -45,7 +44,6 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php ActiveForm::end(); ?>
 
     <div class="col-lg-offset-1" style="color:#999;">
-        You may login with <strong>admin/admin</strong> or <strong>demo/demo</strong>.<br>
-        To modify the username/password, please check out the code <code>app\models\User::$users</code>.
+        You may <?= Html::a('recovery your last password', ['/site/recovery-password']) ?>
     </div>
 </div>

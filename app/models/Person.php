@@ -20,7 +20,7 @@ use yii\web\IdentityInterface;
  * @property string $messenger
  * @property integer $status
  * @property string $created_at
- * @property string $last_visit
+ * @property string $updated_at
  * @property string $type_notify
  * @property string $notify_about
  *
@@ -40,11 +40,11 @@ class Person extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface 
      */
     public function rules() {
         return [
-            [['username', 'pass_hash', 'email', 'created_at', 'last_visit'], 'required'],
+            [['username', 'pass_hash', 'email', 'created_at', 'updated_at'], 'required'],
             //[['status'], 'integer'],
             ['status', 'default', 'value' => self::STATUS_ACTIVE],
             ['status', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_DELETED]],
-            [['created_at', 'last_visit'], 'safe'],
+            [['created_at', 'updated_at'], 'safe'],
             [['username'], 'string', 'max' => 255],
             [['auth_key'], 'string', 'max' => 32],
             [['pass_hash', 'email'], 'string', 'max' => 64],
@@ -67,7 +67,7 @@ class Person extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface 
             'messenger' => Yii::t('app', 'Messenger'),
             'status' => Yii::t('app', 'Status'),
             'created_at' => Yii::t('app', 'Created At'),
-            'last_visit' => Yii::t('app', 'Last Visit'),
+            'updated_at' => Yii::t('app', 'Last Visit'),
             'type_notify' => Yii::t('app', 'Type Notify'),
             'notify_about' => Yii::t('app', 'Notify About'),
         ];
@@ -111,7 +111,7 @@ class Person extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface 
     /**
      * Finds user by username
      *
-     * @param string $phone
+     * @param string $username
      * @return static|null
      */
     public static function findByUsername($username) {
@@ -169,7 +169,7 @@ class Person extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface 
      * @inheritdoc
      */
     public function getUsername() {
-        return $this->phone;
+        return $this->username;
     }
 
     /**
