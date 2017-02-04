@@ -4164,3 +4164,492 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1486223164.109
     'REQUEST_TIME' => 1486223164
 ]
+2017-02-04 16:36:49 [127.0.0.1][-][mddefffc4ii15o2slq8pk9je07][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'Captcha' not found' in /srv/Sites/news/app/themes/basic/site/signup.php:27
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile()
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render()
+#3 /srv/Sites/news/app/controllers/SiteController.php(90): yii\base\Controller->render()
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionRegister()
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array()
+#6 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#8 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#9 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#10 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-02-04 16:36:48 [127.0.0.1][-][mddefffc4ii15o2slq8pk9je07][info][application] $_GET = [
+    'r' => 'site/register'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO\";}'
+    'SID' => 'mddefffc4ii15o2slq8pk9je07'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://news/index.php'
+    'HTTP_COOKIE' => '_csrf=d6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO%22%3B%7D; SID=mddefffc4ii15o2slq8pk9je07'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '34472'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fregister'
+    'REQUEST_URI' => '/index.php?r=site%2Fregister'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486226208.97
+    'REQUEST_TIME' => 1486226208
+]
+2017-02-04 16:37:27 [127.0.0.1][-][mddefffc4ii15o2slq8pk9je07][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'Captcha' not found' in /srv/Sites/news/app/themes/basic/site/signup.php:27
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile()
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render()
+#3 /srv/Sites/news/app/controllers/SiteController.php(90): yii\base\Controller->render()
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionRegister()
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array()
+#6 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#8 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#9 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#10 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-02-04 16:37:27 [127.0.0.1][-][mddefffc4ii15o2slq8pk9je07][info][application] $_GET = [
+    'r' => 'site/register'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO\";}'
+    'SID' => 'mddefffc4ii15o2slq8pk9je07'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://news/index.php'
+    'HTTP_COOKIE' => '_csrf=d6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO%22%3B%7D; SID=mddefffc4ii15o2slq8pk9je07'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '34482'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fregister'
+    'REQUEST_URI' => '/index.php?r=site%2Fregister'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486226247.389
+    'REQUEST_TIME' => 1486226247
+]
+2017-02-04 16:39:22 [127.0.0.1][-][mddefffc4ii15o2slq8pk9je07][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'Captcha' not found' in /srv/Sites/news/app/themes/basic/site/signup.php:27
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile()
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render()
+#3 /srv/Sites/news/app/controllers/SiteController.php(90): yii\base\Controller->render()
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionRegister()
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array()
+#6 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#8 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#9 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#10 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-02-04 16:39:22 [127.0.0.1][-][mddefffc4ii15o2slq8pk9je07][info][application] $_GET = [
+    'r' => 'site/register'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO\";}'
+    'SID' => 'mddefffc4ii15o2slq8pk9je07'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://news/index.php'
+    'HTTP_COOKIE' => '_csrf=d6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO%22%3B%7D; SID=mddefffc4ii15o2slq8pk9je07'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '34484'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fregister'
+    'REQUEST_URI' => '/index.php?r=site%2Fregister'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486226362.33
+    'REQUEST_TIME' => 1486226362
+]
+2017-02-04 16:39:25 [127.0.0.1][-][mddefffc4ii15o2slq8pk9je07][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'Captcha' not found' in /srv/Sites/news/app/themes/basic/site/signup.php:27
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile()
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render()
+#3 /srv/Sites/news/app/controllers/SiteController.php(90): yii\base\Controller->render()
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionRegister()
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array()
+#6 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#8 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#9 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#10 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-02-04 16:39:25 [127.0.0.1][-][mddefffc4ii15o2slq8pk9je07][info][application] $_GET = [
+    'r' => 'site/register'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO\";}'
+    'SID' => 'mddefffc4ii15o2slq8pk9je07'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://news/index.php'
+    'HTTP_COOKIE' => '_csrf=d6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO%22%3B%7D; SID=mddefffc4ii15o2slq8pk9je07'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '34488'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fregister'
+    'REQUEST_URI' => '/index.php?r=site%2Fregister'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486226365.018
+    'REQUEST_TIME' => 1486226365
+]
+2017-02-04 16:39:30 [127.0.0.1][-][mddefffc4ii15o2slq8pk9je07][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'Captcha' not found' in /srv/Sites/news/app/themes/basic/site/signup.php:27
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile()
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render()
+#3 /srv/Sites/news/app/controllers/SiteController.php(90): yii\base\Controller->render()
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionRegister()
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array()
+#6 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#8 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#9 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#10 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-02-04 16:39:30 [127.0.0.1][-][mddefffc4ii15o2slq8pk9je07][info][application] $_GET = [
+    'r' => 'site/register'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO\";}'
+    'SID' => 'mddefffc4ii15o2slq8pk9je07'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf=d6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO%22%3B%7D; SID=mddefffc4ii15o2slq8pk9je07'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '34490'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fregister'
+    'REQUEST_URI' => '/index.php?r=site%2Fregister'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486226370.015
+    'REQUEST_TIME' => 1486226370
+]
+2017-02-04 16:51:12 [127.0.0.1][-][mddefffc4ii15o2slq8pk9je07][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'Captcha' not found' in /srv/Sites/news/app/themes/basic/site/signup.php:27
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile()
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render()
+#3 /srv/Sites/news/app/controllers/SiteController.php(91): yii\base\Controller->render()
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionRegister()
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array()
+#6 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#8 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#9 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#10 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-02-04 16:51:11 [127.0.0.1][-][mddefffc4ii15o2slq8pk9je07][info][application] $_GET = [
+    'r' => 'site/register'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO\";}'
+    'SID' => 'mddefffc4ii15o2slq8pk9je07'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf=d6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO%22%3B%7D; SID=mddefffc4ii15o2slq8pk9je07'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '34746'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fregister'
+    'REQUEST_URI' => '/index.php?r=site%2Fregister'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486227071.231
+    'REQUEST_TIME' => 1486227071
+]
+2017-02-04 16:51:52 [127.0.0.1][-][mddefffc4ii15o2slq8pk9je07][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'Captcha' not found' in /srv/Sites/news/app/themes/basic/site/signup.php:28
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile()
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render()
+#3 /srv/Sites/news/app/controllers/SiteController.php(90): yii\base\Controller->render()
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionRegister()
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array()
+#6 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#8 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#9 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#10 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-02-04 16:51:52 [127.0.0.1][-][mddefffc4ii15o2slq8pk9je07][info][application] $_GET = [
+    'r' => 'site/register'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO\";}'
+    'SID' => 'mddefffc4ii15o2slq8pk9je07'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf=d6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO%22%3B%7D; SID=mddefffc4ii15o2slq8pk9je07'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '34748'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fregister'
+    'REQUEST_URI' => '/index.php?r=site%2Fregister'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486227112.016
+    'REQUEST_TIME' => 1486227112
+]
+2017-02-04 16:53:19 [127.0.0.1][-][mddefffc4ii15o2slq8pk9je07][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'Captcha' not found' in /srv/Sites/news/app/themes/basic/site/signup.php:28
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile()
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render()
+#3 /srv/Sites/news/app/controllers/SiteController.php(90): yii\base\Controller->render()
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionRegister()
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array()
+#6 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#8 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#9 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#10 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-02-04 16:53:19 [127.0.0.1][-][mddefffc4ii15o2slq8pk9je07][info][application] $_GET = [
+    'r' => 'site/register'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO\";}'
+    'SID' => 'mddefffc4ii15o2slq8pk9je07'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://news/index.php?r='
+    'HTTP_COOKIE' => '_csrf=d6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO%22%3B%7D; SID=mddefffc4ii15o2slq8pk9je07'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '34756'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fregister'
+    'REQUEST_URI' => '/index.php?r=site%2Fregister'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486227199.814
+    'REQUEST_TIME' => 1486227199
+]

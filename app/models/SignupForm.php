@@ -4,6 +4,7 @@ namespace app\models;
 
 use yii\base\Model;
 use app\models\Person;
+use yii\captcha\Captcha;
 use yii\base\InvalidParamException;
 
 /**
@@ -14,6 +15,7 @@ class SignupForm extends Model {
     public $username;
     public $email;
     public $password;
+    public $verifyCode;
 
     /**
      * @inheritdoc
@@ -31,6 +33,7 @@ class SignupForm extends Model {
             ['email', 'unique', 'targetClass' => 'app\models\Person', 'message' => 'This email address has already been taken.'],
             ['password', 'required'],
             ['password', 'string', 'min' => 6],
+            ['verifyCode', 'captcha'],
         ];
     }
 
