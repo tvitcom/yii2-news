@@ -4653,3 +4653,643 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1486227199.814
     'REQUEST_TIME' => 1486227199
 ]
+2017-02-04 17:00:30 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class '\common\models\Person' not found' in /srv/Sites/news/app/vendor/yiisoft/yii2/validators/ExistValidator.php:182
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/validators/Validator.php(267): yii\validators\ExistValidator->validateAttribute()
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Model.php(358): yii\validators\Validator->validateAttributes()
+#2 /srv/Sites/news/app/controllers/SiteController.php(119): yii\base\Model->validate()
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionRecoveryPassword()
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array()
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#6 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#7 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#8 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#9 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#10 {main}
+2017-02-04 17:00:30 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/recovery-password'
+]
+
+$_POST = [
+    '_csrf' => 'Li1Vdkdpa2VoZz4AKC4zU2F1HBMBJVIhZGsAJHMQJSlIGx9ODhkPKg=='
+    'PasswordResetRequestForm' => [
+        'email' => 'user4@mail.ruru'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'd6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO\";}'
+    'SID' => 'mfl9hlckuliq127blengfmpej1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://news/index.php?r=site%2Frecovery-password'
+    'HTTP_COOKIE' => '_csrf=d6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO%22%3B%7D; SID=mfl9hlckuliq127blengfmpej1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '120'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '34870'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Frecovery-password'
+    'REQUEST_URI' => '/index.php?r=site%2Frecovery-password'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486227630.445
+    'REQUEST_TIME' => 1486227630
+]
+2017-02-04 17:03:22 [127.0.0.1][-][-][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: /srv/Sites/news/app/mail/passwordResetToken-html.php' in /srv/Sites/news/app/vendor/yiisoft/yii2/base/View.php:229
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/srv/Sites/news...', Array, Object(yii\swiftmailer\Mailer))
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/mail/BaseMailer.php(301): yii\base\View->render('passwordResetTo...', Array, Object(yii\swiftmailer\Mailer))
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/mail/BaseMailer.php(188): yii\mail\BaseMailer->render('passwordResetTo...', Array, 'layouts/html')
+#3 /srv/Sites/news/app/models/PasswordResetRequestForm.php(59): yii\mail\BaseMailer->compose(Array, Array)
+#4 /srv/Sites/news/app/controllers/SiteController.php(120): app\models\PasswordResetRequestForm->sendEmail()
+#5 [internal function]: app\controllers\SiteController->actionRecoveryPassword()
+#6 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#8 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('recovery-passwo...', Array)
+#9 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/recovery-p...', Array)
+#10 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#12 {main}
+2017-02-04 17:03:21 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/recovery-password'
+]
+
+$_POST = [
+    '_csrf' => 'Li1Vdkdpa2VoZz4AKC4zU2F1HBMBJVIhZGsAJHMQJSlIGx9ODhkPKg=='
+    'PasswordResetRequestForm' => [
+        'email' => 'user4@mail.ruru'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'd6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO\";}'
+    'SID' => 'mfl9hlckuliq127blengfmpej1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://news/index.php?r=site%2Frecovery-password'
+    'HTTP_COOKIE' => '_csrf=d6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO%22%3B%7D; SID=mfl9hlckuliq127blengfmpej1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '120'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '34872'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Frecovery-password'
+    'REQUEST_URI' => '/index.php?r=site%2Frecovery-password'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486227801.986
+    'REQUEST_TIME' => 1486227801
+]
+2017-02-04 17:04:53 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: user.passwordResetTokenExpire' in /srv/Sites/news/app/models/Person.php:158
+Stack trace:
+#0 /srv/Sites/news/app/controllers/SiteController.php(120): app\models\PasswordResetRequestForm->sendEmail()
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionRecoveryPassword()
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array()
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#6 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#7 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#8 {main}
+2017-02-04 17:04:53 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/recovery-password'
+]
+
+$_POST = [
+    '_csrf' => 'VHBqVEZCM08SOgEiKQVreRsoIzEADgoLHjY/BnI7fQMyRiBsDzJXAA=='
+    'PasswordResetRequestForm' => [
+        'email' => 'user4@mail.ruru'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'd6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO\";}'
+    'SID' => 'mfl9hlckuliq127blengfmpej1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://news/index.php?r=site%2Frecovery-password'
+    'HTTP_COOKIE' => '_csrf=d6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO%22%3B%7D; SID=mfl9hlckuliq127blengfmpej1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '122'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '34880'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Frecovery-password'
+    'REQUEST_URI' => '/index.php?r=site%2Frecovery-password'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486227893.025
+    'REQUEST_TIME' => 1486227893
+]
+2017-02-04 17:06:46 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: user.passwordResetTokenExpire' in /srv/Sites/news/app/models/Person.php:158
+Stack trace:
+#0 /srv/Sites/news/app/controllers/SiteController.php(120): app\models\PasswordResetRequestForm->sendEmail()
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionRecoveryPassword()
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array()
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#6 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#7 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#8 {main}
+2017-02-04 17:06:46 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/recovery-password'
+]
+
+$_POST = [
+    '_csrf' => 'VHBqVEZCM08SOgEiKQVreRsoIzEADgoLHjY/BnI7fQMyRiBsDzJXAA=='
+    'PasswordResetRequestForm' => [
+        'email' => 'user4@mail.ruru'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'd6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO\";}'
+    'SID' => 'mfl9hlckuliq127blengfmpej1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://news/index.php?r=site%2Frecovery-password'
+    'HTTP_COOKIE' => '_csrf=d6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO%22%3B%7D; SID=mfl9hlckuliq127blengfmpej1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '122'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '34884'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Frecovery-password'
+    'REQUEST_URI' => '/index.php?r=site%2Frecovery-password'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486228006.094
+    'REQUEST_TIME' => 1486228006
+]
+2017-02-04 17:07:40 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: person.passwordResetTokenExpire' in /srv/Sites/news/app/models/Person.php:158
+Stack trace:
+#0 /srv/Sites/news/app/controllers/SiteController.php(120): app\models\PasswordResetRequestForm->sendEmail()
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionRecoveryPassword()
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array()
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#6 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#7 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#8 {main}
+2017-02-04 17:07:40 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/recovery-password'
+]
+
+$_POST = [
+    '_csrf' => 'VHBqVEZCM08SOgEiKQVreRsoIzEADgoLHjY/BnI7fQMyRiBsDzJXAA=='
+    'PasswordResetRequestForm' => [
+        'email' => 'user4@mail.ruru'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'd6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO\";}'
+    'SID' => 'mfl9hlckuliq127blengfmpej1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://news/index.php?r=site%2Frecovery-password'
+    'HTTP_COOKIE' => '_csrf=d6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO%22%3B%7D; SID=mfl9hlckuliq127blengfmpej1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '122'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '34888'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Frecovery-password'
+    'REQUEST_URI' => '/index.php?r=site%2Frecovery-password'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486228059.993
+    'REQUEST_TIME' => 1486228059
+]
+2017-02-04 17:09:19 [127.0.0.1][-][-][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: /srv/Sites/news/app/mail/passwordResetToken-text.php' in /srv/Sites/news/app/vendor/yiisoft/yii2/base/View.php:229
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/srv/Sites/news...', Array, Object(yii\swiftmailer\Mailer))
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/mail/BaseMailer.php(301): yii\base\View->render('passwordResetTo...', Array, Object(yii\swiftmailer\Mailer))
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/mail/BaseMailer.php(191): yii\mail\BaseMailer->render('passwordResetTo...', Array, 'layouts/text')
+#3 /srv/Sites/news/app/models/PasswordResetRequestForm.php(59): yii\mail\BaseMailer->compose(Array, Array)
+#4 /srv/Sites/news/app/controllers/SiteController.php(120): app\models\PasswordResetRequestForm->sendEmail()
+#5 [internal function]: app\controllers\SiteController->actionRecoveryPassword()
+#6 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#8 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('recovery-passwo...', Array)
+#9 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/recovery-p...', Array)
+#10 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#12 {main}
+2017-02-04 17:09:19 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/recovery-password'
+]
+
+$_POST = [
+    '_csrf' => 'VHBqVEZCM08SOgEiKQVreRsoIzEADgoLHjY/BnI7fQMyRiBsDzJXAA=='
+    'PasswordResetRequestForm' => [
+        'email' => 'user4@mail.ruru'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'd6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO\";}'
+    'SID' => 'mfl9hlckuliq127blengfmpej1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://news/index.php?r=site%2Frecovery-password'
+    'HTTP_COOKIE' => '_csrf=d6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO%22%3B%7D; SID=mfl9hlckuliq127blengfmpej1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '122'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '34890'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Frecovery-password'
+    'REQUEST_URI' => '/index.php?r=site%2Frecovery-password'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486228159.556
+    'REQUEST_TIME' => 1486228159
+]
+2017-02-04 17:10:29 [127.0.0.1][-][-][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: /srv/Sites/news/app/mail/layouts/text.php' in /srv/Sites/news/app/vendor/yiisoft/yii2/base/View.php:229
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/srv/Sites/news...', Array, Object(yii\swiftmailer\Mailer))
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/mail/BaseMailer.php(303): yii\base\View->render('layouts/text', Array, Object(yii\swiftmailer\Mailer))
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/mail/BaseMailer.php(191): yii\mail\BaseMailer->render('passwordResetTo...', Array, 'layouts/text')
+#3 /srv/Sites/news/app/models/PasswordResetRequestForm.php(59): yii\mail\BaseMailer->compose(Array, Array)
+#4 /srv/Sites/news/app/controllers/SiteController.php(120): app\models\PasswordResetRequestForm->sendEmail()
+#5 [internal function]: app\controllers\SiteController->actionRecoveryPassword()
+#6 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#8 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('recovery-passwo...', Array)
+#9 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/recovery-p...', Array)
+#10 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#12 {main}
+2017-02-04 17:10:29 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/recovery-password'
+]
+
+$_POST = [
+    '_csrf' => 'VHBqVEZCM08SOgEiKQVreRsoIzEADgoLHjY/BnI7fQMyRiBsDzJXAA=='
+    'PasswordResetRequestForm' => [
+        'email' => 'user4@mail.ruru'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf' => 'd6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO\";}'
+    'SID' => 'mfl9hlckuliq127blengfmpej1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://news/index.php?r=site%2Frecovery-password'
+    'HTTP_COOKIE' => '_csrf=d6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO%22%3B%7D; SID=mfl9hlckuliq127blengfmpej1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '122'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '34894'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Frecovery-password'
+    'REQUEST_URI' => '/index.php?r=site%2Frecovery-password'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486228229.39
+    'REQUEST_TIME' => 1486228229
+]
+2017-02-04 17:46:57 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'Captcha' not found' in /srv/Sites/news/app/themes/basic/site/requestPasswordResetToken.php:24
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile()
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render()
+#3 /srv/Sites/news/app/controllers/SiteController.php(132): yii\base\Controller->render()
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionRecoveryPassword()
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array()
+#6 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#8 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#9 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#10 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-02-04 17:46:57 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/recovery-password'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO\";}'
+    'SID' => 'mfl9hlckuliq127blengfmpej1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://news/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => '_csrf=d6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO%22%3B%7D; SID=mfl9hlckuliq127blengfmpej1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '34972'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Frecovery-password'
+    'REQUEST_URI' => '/index.php?r=site%2Frecovery-password'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486230417.693
+    'REQUEST_TIME' => 1486230417
+]
+2017-02-04 17:46:57 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'Captcha' not found' in /srv/Sites/news/app/themes/basic/site/requestPasswordResetToken.php:24
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile()
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render()
+#3 /srv/Sites/news/app/controllers/SiteController.php(132): yii\base\Controller->render()
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionRecoveryPassword()
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array()
+#6 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#8 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#9 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#10 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-02-04 17:46:57 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/recovery-password'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO\";}'
+    'SID' => 'mfl9hlckuliq127blengfmpej1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://news/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => '_csrf=d6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO%22%3B%7D; SID=mfl9hlckuliq127blengfmpej1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '34974'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Frecovery-password'
+    'REQUEST_URI' => '/index.php?r=site%2Frecovery-password'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486230417.738
+    'REQUEST_TIME' => 1486230417
+]
+2017-02-04 17:52:38 [127.0.0.1][-][mfl9hlckuliq127blengfmpej1][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "3Dsite/reset-password".' in /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('3Dsite/reset-pa...', Array)
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#2 {main}
+2017-02-04 17:52:38 [127.0.0.1][-][mfl9hlckuliq127blengfmpej1][info][application] $_GET = [
+    'r' => '3Dsite/reset-password'
+    'amp;token' => '3Dtl0DGhwGGfzFsBuLiKD=z-EW7Gv4lyEME_1486230637'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO\";}'
+    'SID' => 'mfl9hlckuliq127blengfmpej1'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    'success' => 'Check your email for further instructions.'
+    '__captcha/site/captcha' => 'zinlmap'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf=d6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO%22%3B%7D; SID=mfl9hlckuliq127blengfmpej1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '34998'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=3Dsite%2Freset-password&amp;token=3Dtl0DGhwGGfzFsBuLiKD=z-EW7Gv4lyEME_1486230637'
+    'REQUEST_URI' => '/index.php?r=3Dsite%2Freset-password&amp;token=3Dtl0DGhwGGfzFsBuLiKD=z-EW7Gv4lyEME_1486230637'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486230758.657
+    'REQUEST_TIME' => 1486230758
+]

@@ -5,6 +5,7 @@ namespace app\models;
 use Yii;
 use yii\base\Model;
 use app\models\Person;
+use yii\captcha\Captcha;
 
 /**
  * Password reset request form
@@ -12,6 +13,7 @@ use app\models\Person;
 class PasswordResetRequestForm extends Model {
 
     public $email;
+    public $verifyCode;
 
     /**
      * @inheritdoc
@@ -22,10 +24,11 @@ class PasswordResetRequestForm extends Model {
             ['email', 'required'],
             ['email', 'email'],
             ['email', 'exist',
-                'targetClass' => '\common\models\Person',
+                'targetClass' => '\app\models\Person',
                 'filter' => ['status' => Person::STATUS_ACTIVE],
                 'message' => 'There is no user with such email.'
             ],
+            ['verifyCode', 'captcha'],
         ];
     }
 
