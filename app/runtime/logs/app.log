@@ -3872,3 +3872,295 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1486218027.429
     'REQUEST_TIME' => 1486218027
 ]
+2017-02-04 14:46:19 [127.0.0.1][-][9rpg702937q1r4vq7dh7mck8b5][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'error saved model person!!!' in /srv/Sites/news/app/models/SignupForm.php:58
+Stack trace:
+#0 /srv/Sites/news/app/controllers/SiteController.php(81): app\models\SignupForm->signup()
+#1 [internal function]: app\controllers\SiteController->actionRegister()
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('register', Array)
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/register', Array)
+#6 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#8 {main}
+2017-02-04 14:46:18 [127.0.0.1][-][9rpg702937q1r4vq7dh7mck8b5][info][application] $_GET = [
+    'r' => 'site/register'
+]
+
+$_POST = [
+    '_csrf' => 'bnctbnFtU2MoPUYYHioLVSEvZAs3IWonJDF4PEUUHS8IQWdWOB03LA=='
+    'SignupForm' => [
+        'username' => 'user2'
+        'email' => 'user2@mail.ruru'
+        'password' => 'pass_to_news'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => 'd6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO\";}'
+    'SID' => '9rpg702937q1r4vq7dh7mck8b5'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://news/index.php?r=site%2Fregister'
+    'HTTP_COOKIE' => '_csrf=d6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO%22%3B%7D; SID=9rpg702937q1r4vq7dh7mck8b5'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '190'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '60640'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fregister'
+    'REQUEST_URI' => '/index.php?r=site%2Fregister'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486219578.126
+    'REQUEST_TIME' => 1486219578
+]
+2017-02-04 14:47:55 [127.0.0.1][-][9rpg702937q1r4vq7dh7mck8b5][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'error saved model person!!!' in /srv/Sites/news/app/models/SignupForm.php:68
+Stack trace:
+#0 /srv/Sites/news/app/controllers/SiteController.php(81): app\models\SignupForm->signup()
+#1 [internal function]: app\controllers\SiteController->actionRegister()
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('register', Array)
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/register', Array)
+#6 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#8 {main}
+2017-02-04 14:47:54 [127.0.0.1][-][9rpg702937q1r4vq7dh7mck8b5][info][application] $_GET = [
+    'r' => 'site/register'
+]
+
+$_POST = [
+    '_csrf' => 'b1UwRl9WbU4pH1swMBE1eCANeSMZGlQKJRNlFGsvIwIJY3p.FiYJAQ=='
+    'SignupForm' => [
+        'username' => 'user2'
+        'email' => 'user2@mail.ruru'
+        'password' => 'pass_to_news'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => 'd6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO\";}'
+    'SID' => '9rpg702937q1r4vq7dh7mck8b5'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://news/index.php?r=site%2Fregister'
+    'HTTP_COOKIE' => '_csrf=d6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO%22%3B%7D; SID=9rpg702937q1r4vq7dh7mck8b5'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '190'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '60656'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fregister'
+    'REQUEST_URI' => '/index.php?r=site%2Fregister'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486219674.437
+    'REQUEST_TIME' => 1486219674
+]
+2017-02-04 14:50:20 [127.0.0.1][-][9rpg702937q1r4vq7dh7mck8b5][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'error saved model person!!!' in /srv/Sites/news/app/models/SignupForm.php:68
+Stack trace:
+#0 /srv/Sites/news/app/controllers/SiteController.php(81): app\models\SignupForm->signup()
+#1 [internal function]: app\controllers\SiteController->actionRegister()
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('register', Array)
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/register', Array)
+#6 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#8 {main}
+2017-02-04 14:50:19 [127.0.0.1][-][9rpg702937q1r4vq7dh7mck8b5][info][application] $_GET = [
+    'r' => 'site/register'
+]
+
+$_POST = [
+    '_csrf' => 'VzBiZzFLYzERegkRXgw7BxhoKwJ3B1p1HXY3NQUyLX0xBihfeDsHfg=='
+    'SignupForm' => [
+        'username' => 'user2'
+        'email' => 'user2@mail.ruru'
+        'password' => 'pass_to_news'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => 'd6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO\";}'
+    'SID' => '9rpg702937q1r4vq7dh7mck8b5'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://news/index.php?r=site%2Fregister'
+    'HTTP_COOKIE' => '_csrf=d6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO%22%3B%7D; SID=9rpg702937q1r4vq7dh7mck8b5'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '190'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '60668'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fregister'
+    'REQUEST_URI' => '/index.php?r=site%2Fregister'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486219819.036
+    'REQUEST_TIME' => 1486219819
+]
+2017-02-04 15:46:05 [127.0.0.1][-][1k3sjc2lf8surua2p3dvpq9hk2][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\models\Expression' not found' in /srv/Sites/news/app/models/Person.php:98
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Component.php(533): yii\base\Component->ensureBehaviors()
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/db/BaseActiveRecord.php(890): yii\base\Component->trigger()
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Object.php(107): yii\db\BaseActiveRecord->init()
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/db/BaseActiveRecord.php(1155): yii\base\Object->__construct()
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/db/ActiveQueryTrait.php(132): yii\db\BaseActiveRecord::instantiate()
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/db/ActiveQuery.php(210): yii\db\ActiveQuery->createModels()
+#6 /srv/Sites/news/app/vendor/yiisoft/yii2/db/ActiveQuery.php(297): yii\db\ActiveQuery->populate()
+#7 /srv/Sites/news/app/vendor/yiisoft/yii2/db/BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#8 /srv/Sites/news/app/models/Person.php(107): yii\db\BaseActiveRecord::findOne()
+#9 /srv/Sites/news/app/vendor/yiisoft/yii2/web/User.php(657): app\models\Person::findIdentity()
+#10 /srv/Sites/news/app/vendor/yiisoft/yii2/web/User.php(188): yii\web\User->renewAuthStatus()
+#11 /srv/Sites/news/app/vendor/yiisoft/yii2/web/User.php(333): yii\web\User->getIdentity()
+#12 /srv/Sites/news/app/vendor/yiisoft/yii2/filters/AccessRule.php(156): yii\web\User->getIsGuest()
+#13 /srv/Sites/news/app/vendor/yiisoft/yii2/filters/AccessRule.php(111): yii\filters\AccessRule->matchRole()
+#14 /srv/Sites/news/app/vendor/yiisoft/yii2/filters/AccessControl.php(118): yii\filters\AccessRule->allows()
+#15 /srv/Sites/news/app/vendor/yiisoft/yii2/base/ActionFilter.php(75): yii\filters\AccessControl->beforeAction()
+#16 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Component.php(545): yii\base\ActionFilter->beforeFilter()
+#17 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Component.php(545): ::call_user_func()
+#18 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(272): yii\base\Component->trigger()
+#19 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction()
+#20 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(154): yii\web\Controller->beforeAction()
+#21 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#22 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#23 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#24 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#25 {main}
+2017-02-04 15:46:04 [127.0.0.1][-][1k3sjc2lf8surua2p3dvpq9hk2][info][application] $_GET = [
+    'r' => 'site/logout'
+]
+
+$_POST = [
+    '_csrf' => 'OFZhekFkWVN.HAoMLiMBZXcOKB8HKGAXchA0KHUdFx9eYCtCCBQ9HA=='
+]
+
+$_COOKIE = [
+    '_csrf' => 'd6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO\";}'
+    'SID' => '1k3sjc2lf8surua2p3dvpq9hk2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '3'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://news/index.php'
+    'HTTP_COOKIE' => '_csrf=d6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO%22%3B%7D; SID=1k3sjc2lf8surua2p3dvpq9hk2'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '66'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '32976'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogout'
+    'REQUEST_URI' => '/index.php?r=site%2Flogout'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486223164.109
+    'REQUEST_TIME' => 1486223164
+]

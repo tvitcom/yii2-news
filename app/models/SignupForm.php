@@ -23,11 +23,11 @@ class SignupForm extends Model {
             ['username', 'trim'],
             ['username', 'required'],
             ['username', 'unique', 'targetClass' => 'app\models\Person', 'message' => 'This username has already been taken.'],
-            ['username', 'string', 'min' => 2, 'max' => 255],
+            ['username', 'string', 'min' => 3, 'max' => 255],
             ['email', 'trim'],
             ['email', 'required'],
             ['email', 'email'],
-            ['email', 'string', 'max' => 255],
+            ['email', 'string', 'max' => 64],
             ['email', 'unique', 'targetClass' => 'app\models\Person', 'message' => 'This email address has already been taken.'],
             ['password', 'required'],
             ['password', 'string', 'min' => 6],
@@ -49,7 +49,7 @@ class SignupForm extends Model {
         $user->email = $this->email;
         $user->setPassword($this->password);
         $user->generateAuthKey();
-        $user->created_at = '2000-01-01 00:00:00';
+        $user->created_at = '20000101000000';
         $user->updated_at = '2000-01-01 00:00:00';
 
         if ($user->save())

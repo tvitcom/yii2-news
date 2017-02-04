@@ -6,6 +6,7 @@ use Yii;
 use yii\base\NotSupportedException;
 use yii\behaviors\TimestampBehavior;
 use yii\db\ActiveRecord;
+use yii\db\Expression;
 use yii\web\IdentityInterface;
 
 /**
@@ -41,10 +42,11 @@ class Person extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface 
     public function rules() {
         return [
             [['username', 'pass_hash', 'email', 'created_at', 'updated_at'], 'required'],
-            //[['status'], 'integer'],
+            [['status'], 'integer'],
             ['status', 'default', 'value' => self::STATUS_ACTIVE],
             ['status', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_DELETED]],
             [['created_at', 'updated_at'], 'safe'],
+            ['email', 'email'],
             [['username'], 'string', 'max' => 255],
             [['auth_key'], 'string', 'max' => 32],
             [['pass_hash', 'email'], 'string', 'max' => 64],
@@ -86,11 +88,17 @@ class Person extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface 
     const STATUS_ACTIVE = 10;
 
     /**
+     * For get datetime value in datetime format
      * @inheritdoc
      */
     public function behaviors() {
         return [
-            TimestampBehavior::className(),
+            [
+                'class' => TimestampBehavior::className(),
+                'createdAtAttribute' => 'created_at',
+                'updatedAtAttribute' => 'updated_at',
+                'value' => new Expression('SYSDATE()'),
+            ],
         ];
     }
 
