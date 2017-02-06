@@ -5744,3 +5744,1012 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1486231388.433
     'REQUEST_TIME' => 1486231388
 ]
+2017-02-04 18:18:13 [127.0.0.1][-][mfl9hlckuliq127blengfmpej1][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "3Dsite/reset-password".' in /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('3Dsite/reset-pa...', Array)
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#2 {main}
+2017-02-04 18:18:13 [127.0.0.1][-][mfl9hlckuliq127blengfmpej1][info][application] $_GET = [
+    'r' => '3Dsite/reset-password'
+    'token' => '3DiflTEzW-ZcHgC7aOxTUw1R=rDPf4_Ke_F_1486232207'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO\";}'
+    'SID' => 'mfl9hlckuliq127blengfmpej1'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    'success' => 'Check your email for further instructions.'
+    '__captcha/site/captcha' => 'zwwiyu'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf=d6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO%22%3B%7D; SID=mfl9hlckuliq127blengfmpej1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '35182'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=3Dsite%2Freset-password&token=3DiflTEzW-ZcHgC7aOxTUw1R=rDPf4_Ke_F_1486232207'
+    'REQUEST_URI' => '/index.php?r=3Dsite%2Freset-password&token=3DiflTEzW-ZcHgC7aOxTUw1R=rDPf4_Ke_F_1486232207'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486232293.096
+    'REQUEST_TIME' => 1486232293
+]
+2017-02-04 18:18:19 [127.0.0.1][-][mfl9hlckuliq127blengfmpej1][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Wrong password reset token.' in /srv/Sites/news/app/controllers/SiteController.php:146
+Stack trace:
+#0 [internal function]: app\controllers\SiteController->actionResetPassword('3DiflTEzW-ZcHgC...')
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('reset-password', Array)
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/reset-pass...', Array)
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#7 {main}
+2017-02-04 18:18:19 [127.0.0.1][-][mfl9hlckuliq127blengfmpej1][info][application] $_GET = [
+    'r' => 'site/reset-password'
+    'token' => '3DiflTEzW-ZcHgC7aOxTUw1R=rDPf4_Ke_F_1486232207'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO\";}'
+    'SID' => 'mfl9hlckuliq127blengfmpej1'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    'success' => 'Check your email for further instructions.'
+    '__captcha/site/captcha' => 'zwwiyu'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf=d6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO%22%3B%7D; SID=mfl9hlckuliq127blengfmpej1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '35186'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Freset-password&token=3DiflTEzW-ZcHgC7aOxTUw1R=rDPf4_Ke_F_1486232207'
+    'REQUEST_URI' => '/index.php?r=site%2Freset-password&token=3DiflTEzW-ZcHgC7aOxTUw1R=rDPf4_Ke_F_1486232207'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486232299.006
+    'REQUEST_TIME' => 1486232299
+]
+2017-02-04 20:52:55 [127.0.0.1][-][mfl9hlckuliq127blengfmpej1][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Wrong password reset token.' in /srv/Sites/news/app/controllers/SiteController.php:146
+Stack trace:
+#0 [internal function]: app\controllers\SiteController->actionResetPassword('3DiflTEzW-ZcHgC...')
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('reset-password', Array)
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/reset-pass...', Array)
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#7 {main}
+2017-02-04 20:52:53 [127.0.0.1][-][mfl9hlckuliq127blengfmpej1][info][application] $_GET = [
+    'r' => 'site/reset-password'
+    'token' => '3DiflTEzW-ZcHgC7aOxTUw1R=rDPf4_Ke_F_1486232207'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO\";}'
+    'SID' => 'mfl9hlckuliq127blengfmpej1'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    'success' => 'Check your email for further instructions.'
+    '__captcha/site/captcha' => 'zwwiyu'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf=d6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO%22%3B%7D; SID=mfl9hlckuliq127blengfmpej1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '37640'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Freset-password&token=3DiflTEzW-ZcHgC7aOxTUw1R=rDPf4_Ke_F_1486232207'
+    'REQUEST_URI' => '/index.php?r=site%2Freset-password&token=3DiflTEzW-ZcHgC7aOxTUw1R=rDPf4_Ke_F_1486232207'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486241571.291
+    'REQUEST_TIME' => 1486241571
+]
+2017-02-04 21:06:03 [127.0.0.1][-][mfl9hlckuliq127blengfmpej1][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "3Dsite/reset-password".' in /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('3Dsite/reset-pa...', Array)
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#2 {main}
+2017-02-04 21:06:03 [127.0.0.1][-][mfl9hlckuliq127blengfmpej1][info][application] $_GET = [
+    'r' => '3Dsite/reset-password'
+    'token' => '3DMSpdJuVZSfrqSi5I5ltoJN=sA-EyUw2xk_1486241914'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO\";}'
+    'SID' => 'mfl9hlckuliq127blengfmpej1'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    'success' => 'Check your email for further instructions.'
+    '__captcha/site/captcha' => 'iutoeoc'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf=d6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO%22%3B%7D; SID=mfl9hlckuliq127blengfmpej1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '37784'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=3Dsite%2Freset-password&token=3DMSpdJuVZSfrqSi5I5ltoJN=sA-EyUw2xk_1486241914'
+    'REQUEST_URI' => '/index.php?r=3Dsite%2Freset-password&token=3DMSpdJuVZSfrqSi5I5ltoJN=sA-EyUw2xk_1486241914'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486242363.801
+    'REQUEST_TIME' => 1486242363
+]
+2017-02-04 21:06:17 [127.0.0.1][-][mfl9hlckuliq127blengfmpej1][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Wrong password reset token.' in /srv/Sites/news/app/controllers/SiteController.php:146
+Stack trace:
+#0 [internal function]: app\controllers\SiteController->actionResetPassword('3DMSpdJuVZSfrqS...')
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('reset-password', Array)
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/reset-pass...', Array)
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#7 {main}
+2017-02-04 21:06:17 [127.0.0.1][-][mfl9hlckuliq127blengfmpej1][info][application] $_GET = [
+    'r' => 'site/reset-password'
+    'token' => '3DMSpdJuVZSfrqSi5I5ltoJN=sA-EyUw2xk_1486241914'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO\";}'
+    'SID' => 'mfl9hlckuliq127blengfmpej1'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    'success' => 'Check your email for further instructions.'
+    '__captcha/site/captcha' => 'iutoeoc'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf=d6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO%22%3B%7D; SID=mfl9hlckuliq127blengfmpej1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '37790'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Freset-password&token=3DMSpdJuVZSfrqSi5I5ltoJN=sA-EyUw2xk_1486241914'
+    'REQUEST_URI' => '/index.php?r=site%2Freset-password&token=3DMSpdJuVZSfrqSi5I5ltoJN=sA-EyUw2xk_1486241914'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486242377.854
+    'REQUEST_TIME' => 1486242377
+]
+2017-02-04 21:10:22 [127.0.0.1][-][mfl9hlckuliq127blengfmpej1][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Wrong password reset token.' in /srv/Sites/news/app/controllers/SiteController.php:146
+Stack trace:
+#0 [internal function]: app\controllers\SiteController->actionResetPassword('3DMSpdJuVZSfrqS...')
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('reset-password', Array)
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/reset-pass...', Array)
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#7 {main}
+2017-02-04 21:10:22 [127.0.0.1][-][mfl9hlckuliq127blengfmpej1][info][application] $_GET = [
+    'r' => 'site/reset-password'
+    'token' => '3DMSpdJuVZSfrqSi5I5ltoJN=sA-EyUw2xk_1486241914'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO\";}'
+    'SID' => 'mfl9hlckuliq127blengfmpej1'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    'success' => 'Check your email for further instructions.'
+    '__captcha/site/captcha' => 'iutoeoc'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf=d6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO%22%3B%7D; SID=mfl9hlckuliq127blengfmpej1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '37804'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Freset-password&token=3DMSpdJuVZSfrqSi5I5ltoJN=sA-EyUw2xk_1486241914'
+    'REQUEST_URI' => '/index.php?r=site%2Freset-password&token=3DMSpdJuVZSfrqSi5I5ltoJN=sA-EyUw2xk_1486241914'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486242622.25
+    'REQUEST_TIME' => 1486242622
+]
+2017-02-04 21:25:13 [127.0.0.1][-][mfl9hlckuliq127blengfmpej1][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Wrong password reset token.' in /srv/Sites/news/app/controllers/SiteController.php:146
+Stack trace:
+#0 [internal function]: app\controllers\SiteController->actionResetPassword('n79d7PGSgZ5mqE8...')
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('reset-password', Array)
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/reset-pass...', Array)
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#7 {main}
+2017-02-04 21:25:13 [127.0.0.1][-][mfl9hlckuliq127blengfmpej1][info][application] $_GET = [
+    'r' => 'site/reset-password'
+    'token' => 'n79d7PGSgZ5mqE8R_ERIkx=tdt4Q-iHkV'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO\";}'
+    'SID' => 'mfl9hlckuliq127blengfmpej1'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    'success' => 'Check your email for further instructions.'
+    '__captcha/site/captcha' => 'socywip'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf=d6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO%22%3B%7D; SID=mfl9hlckuliq127blengfmpej1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '37886'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Freset-password&token=n79d7PGSgZ5mqE8R_ERIkx=tdt4Q-iHkV'
+    'REQUEST_URI' => '/index.php?r=site%2Freset-password&token=n79d7PGSgZ5mqE8R_ERIkx=tdt4Q-iHkV'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486243513.894
+    'REQUEST_TIME' => 1486243513
+]
+2017-02-04 21:27:13 [127.0.0.1][-][mfl9hlckuliq127blengfmpej1][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Wrong password reset token.' in /srv/Sites/news/app/controllers/SiteController.php:146
+Stack trace:
+#0 [internal function]: app\controllers\SiteController->actionResetPassword('n79d7PGSgZ5mqE8...')
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('reset-password', Array)
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/reset-pass...', Array)
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#7 {main}
+2017-02-04 21:27:13 [127.0.0.1][-][mfl9hlckuliq127blengfmpej1][info][application] $_GET = [
+    'r' => 'site/reset-password'
+    'token' => 'n79d7PGSgZ5mqE8R_ERIkxtdt4Q-iHkV'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO\";}'
+    'SID' => 'mfl9hlckuliq127blengfmpej1'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    'success' => 'Check your email for further instructions.'
+    '__captcha/site/captcha' => 'socywip'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf=d6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO%22%3B%7D; SID=mfl9hlckuliq127blengfmpej1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '37900'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Freset-password&token=n79d7PGSgZ5mqE8R_ERIkxtdt4Q-iHkV'
+    'REQUEST_URI' => '/index.php?r=site%2Freset-password&token=n79d7PGSgZ5mqE8R_ERIkxtdt4Q-iHkV'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486243633.162
+    'REQUEST_TIME' => 1486243633
+]
+2017-02-05 00:10:04 [127.0.0.1][-][mfl9hlckuliq127blengfmpej1][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Wrong password reset token.' in /srv/Sites/news/app/controllers/SiteController.php:146
+Stack trace:
+#0 [internal function]: app\controllers\SiteController->actionResetPassword('HTi-s9_JeaQ1XF0...')
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('reset-password', Array)
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/reset-pass...', Array)
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#7 {main}
+2017-02-05 00:10:03 [127.0.0.1][-][mfl9hlckuliq127blengfmpej1][info][application] $_GET = [
+    'r' => 'site/reset-password'
+    'token' => 'HTi-s9_JeaQ1XF0NyUGmrf=22IIRuwhUG0c'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO\";}'
+    'SID' => 'mfl9hlckuliq127blengfmpej1'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    'success' => 'Check your email for further instructions.'
+    '__captcha/site/captcha' => 'qalijo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf=d6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO%22%3B%7D; SID=mfl9hlckuliq127blengfmpej1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '35810'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Freset-password&token=HTi-s9_JeaQ1XF0NyUGmrf=22IIRuwhUG0c'
+    'REQUEST_URI' => '/index.php?r=site%2Freset-password&token=HTi-s9_JeaQ1XF0NyUGmrf=22IIRuwhUG0c'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486253403.933
+    'REQUEST_TIME' => 1486253403
+]
+2017-02-05 00:13:13 [127.0.0.1][-][mfl9hlckuliq127blengfmpej1][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Wrong password reset token.' in /srv/Sites/news/app/controllers/SiteController.php:146
+Stack trace:
+#0 [internal function]: app\controllers\SiteController->actionResetPassword('HTi-s9_JeaQ1XF0...')
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('reset-password', Array)
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/reset-pass...', Array)
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#7 {main}
+2017-02-05 00:13:13 [127.0.0.1][-][mfl9hlckuliq127blengfmpej1][info][application] $_GET = [
+    'r' => 'site/reset-password'
+    'token' => 'HTi-s9_JeaQ1XF0NyUGmrf=22IIRuwhUG0c'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO\";}'
+    'SID' => 'mfl9hlckuliq127blengfmpej1'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    'success' => 'Check your email for further instructions.'
+    '__captcha/site/captcha' => 'qalijo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf=d6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO%22%3B%7D; SID=mfl9hlckuliq127blengfmpej1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '35816'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Freset-password&token=HTi-s9_JeaQ1XF0NyUGmrf=22IIRuwhUG0c'
+    'REQUEST_URI' => '/index.php?r=site%2Freset-password&token=HTi-s9_JeaQ1XF0NyUGmrf=22IIRuwhUG0c'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486253593.785
+    'REQUEST_TIME' => 1486253593
+]
+2017-02-05 00:13:45 [127.0.0.1][-][mfl9hlckuliq127blengfmpej1][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Wrong password reset token.' in /srv/Sites/news/app/controllers/SiteController.php:146
+Stack trace:
+#0 [internal function]: app\controllers\SiteController->actionResetPassword('HTi-s9_JeaQ1XF0...')
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('reset-password', Array)
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/reset-pass...', Array)
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#7 {main}
+2017-02-05 00:13:45 [127.0.0.1][-][mfl9hlckuliq127blengfmpej1][info][application] $_GET = [
+    'r' => 'site/reset-password'
+    'token' => 'HTi-s9_JeaQ1XF0NyUGmrf=22IIRuwhUG0c'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO\";}'
+    'SID' => 'mfl9hlckuliq127blengfmpej1'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    'success' => 'Check your email for further instructions.'
+    '__captcha/site/captcha' => 'qalijo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf=d6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO%22%3B%7D; SID=mfl9hlckuliq127blengfmpej1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '35826'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Freset-password&token=news/index.php?r=site%2Freset-password&token=HTi-s9_JeaQ1XF0NyUGmrf=22IIRuwhUG0c'
+    'REQUEST_URI' => '/index.php?r=site%2Freset-password&token=news/index.php?r=site%2Freset-password&token=HTi-s9_JeaQ1XF0NyUGmrf=22IIRuwhUG0c'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486253625.218
+    'REQUEST_TIME' => 1486253625
+]
+2017-02-05 00:16:42 [127.0.0.1][-][mfl9hlckuliq127blengfmpej1][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Wrong password reset token.' in /srv/Sites/news/app/controllers/SiteController.php:146
+Stack trace:
+#0 [internal function]: app\controllers\SiteController->actionResetPassword('HTi-s9_JeaQ1XF0...')
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('reset-password', Array)
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/reset-pass...', Array)
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#7 {main}
+2017-02-05 00:16:42 [127.0.0.1][-][mfl9hlckuliq127blengfmpej1][info][application] $_GET = [
+    'r' => 'site/reset-password'
+    'token' => 'HTi-s9_JeaQ1XF0NyUGmrf=22IIRuwhUG0c'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO\";}'
+    'SID' => 'mfl9hlckuliq127blengfmpej1'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    'success' => 'Check your email for further instructions.'
+    '__captcha/site/captcha' => 'qalijo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf=d6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO%22%3B%7D; SID=mfl9hlckuliq127blengfmpej1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '35850'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Freset-password&token=HTi-s9_JeaQ1XF0NyUGmrf=22IIRuwhUG0c'
+    'REQUEST_URI' => '/index.php?r=site%2Freset-password&token=HTi-s9_JeaQ1XF0NyUGmrf=22IIRuwhUG0c'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486253802.35
+    'REQUEST_TIME' => 1486253802
+]
+2017-02-05 00:19:18 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'return' (T_RETURN)' in /srv/Sites/news/app/models/Person.php:159
+Stack trace:
+#0 /srv/Sites/news/app/controllers/SiteController.php(32): ::spl_autoload_call()
+#1 /srv/Sites/news/app/controllers/SiteController.php(144): app\models\ResetPasswordForm->__construct()
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionResetPassword()
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array()
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#6 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#7 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#8 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#9 {main}
+2017-02-05 00:19:18 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/reset-password'
+    'token' => 'HTi-s9_JeaQ1XF0NyUGmrf=22IIRuwhUG0c'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO\";}'
+    'SID' => 'mfl9hlckuliq127blengfmpej1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf=d6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO%22%3B%7D; SID=mfl9hlckuliq127blengfmpej1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '35880'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Freset-password&token=HTi-s9_JeaQ1XF0NyUGmrf=22IIRuwhUG0c'
+    'REQUEST_URI' => '/index.php?r=site%2Freset-password&token=HTi-s9_JeaQ1XF0NyUGmrf=22IIRuwhUG0c'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486253958.171
+    'REQUEST_TIME' => 1486253958
+]
+2017-02-05 00:19:48 [127.0.0.1][-][mfl9hlckuliq127blengfmpej1][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Wrong password reset token.' in /srv/Sites/news/app/controllers/SiteController.php:146
+Stack trace:
+#0 [internal function]: app\controllers\SiteController->actionResetPassword('HTi-s9_JeaQ1XF0...')
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('reset-password', Array)
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/reset-pass...', Array)
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#7 {main}
+2017-02-05 00:19:48 [127.0.0.1][-][mfl9hlckuliq127blengfmpej1][info][application] $_GET = [
+    'r' => 'site/reset-password'
+    'token' => 'HTi-s9_JeaQ1XF0NyUGmrf=22IIRuwhUG0c'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO\";}'
+    'SID' => 'mfl9hlckuliq127blengfmpej1'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    'success' => 'Check your email for further instructions.'
+    '__captcha/site/captcha' => 'qalijo'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf=d6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO%22%3B%7D; SID=mfl9hlckuliq127blengfmpej1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '35884'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Freset-password&token=HTi-s9_JeaQ1XF0NyUGmrf=22IIRuwhUG0c'
+    'REQUEST_URI' => '/index.php?r=site%2Freset-password&token=HTi-s9_JeaQ1XF0NyUGmrf=22IIRuwhUG0c'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486253987.994
+    'REQUEST_TIME' => 1486253987
+]
+2017-02-05 06:41:10 [127.0.0.1][-][mfl9hlckuliq127blengfmpej1][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Wrong password reset token.' in /srv/Sites/news/app/controllers/SiteController.php:146
+Stack trace:
+#0 [internal function]: app\controllers\SiteController->actionResetPassword('12345_148627603...')
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('reset-password', Array)
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/reset-pass...', Array)
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#7 {main}
+2017-02-05 06:41:10 [127.0.0.1][-][mfl9hlckuliq127blengfmpej1][info][application] $_GET = [
+    'r' => 'site/reset-password'
+    'token' => '12345_1486276034'
+]
+
+$_COOKIE = [
+    '_csrf' => 'd6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO\";}'
+    'SID' => 'mfl9hlckuliq127blengfmpej1'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    'success' => 'Check your email for further instructions.'
+    '__captcha/site/captcha' => 'qqzuluv'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => '_csrf=d6496a211588eac48feacbe44c05d4dae1968cba290bffb83fc213628e0f7b1fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FJkvoGX6OXIeFL9DJFUR4yNLf6J8IpdO%22%3B%7D; SID=mfl9hlckuliq127blengfmpej1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '43242'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Freset-password&token=12345_1486276034'
+    'REQUEST_URI' => '/index.php?r=site%2Freset-password&token=12345_1486276034'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486276870.754
+    'REQUEST_TIME' => 1486276870
+]
+2017-02-06 06:37:33 [127.0.0.1][-][kkdmjmk5asquibpnndtcund174][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'else' (T_ELSE), expecting ',' or ';'' in /srv/Sites/news/app/themes/basic/site/login.php:17
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile()
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render()
+#2 /srv/Sites/news/app/controllers/SiteController.php(109): yii\base\Controller->render()
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionLogin()
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array()
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#6 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#7 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#8 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#9 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#10 {main}
+2017-02-06 06:37:33 [127.0.0.1][-][kkdmjmk5asquibpnndtcund174][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf' => 'MVlLWjZsWEcIGiQ8ADosFFQpOgpiAT8/AzwdNnAOKh5WAw5qYVoVAA=='
+    'LoginForm' => [
+        'username' => 'user4@mail.ruru'
+        'password' => '123456'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => '97aad38b7e266cb55bcff5ffe85d7bec29ce289a7df03cefaab49f4451d186c4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"9Cof6VtSepqPTmgx2eVlFbrYgZE0W6MG\";}'
+    'SID' => 'kkdmjmk5asquibpnndtcund174'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    '__captcha/site/captcha' => 'aitjqu'
+    '__captcha/site/captchacount' => 1
+    'success' => 'New password was saved.'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux i686; rv:45.0) Gecko/20100101 Firefox/45.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://news/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => '_csrf=97aad38b7e266cb55bcff5ffe85d7bec29ce289a7df03cefaab49f4451d186c4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%229Cof6VtSepqPTmgx2eVlFbrYgZE0W6MG%22%3B%7D; SID=kkdmjmk5asquibpnndtcund174'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '211'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '52362'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486363053.281
+    'REQUEST_TIME' => 1486363053
+]
