@@ -44,7 +44,7 @@ class Person extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface 
             [['username', 'pass_hash', 'email', 'created_at', 'updated_at'], 'required'],
             [['status'], 'integer'],
             ['status', 'default', 'value' => self::STATUS_ACTIVE],
-            ['status', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_DELETED]],
+            ['status', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_APPROVE, self::STATUS_DELETED]],
             [['created_at', 'updated_at'], 'safe'],
             ['email', 'email'],
             [['username'], 'string', 'max' => 255],
@@ -114,8 +114,8 @@ class Person extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface 
      * @inheritdoc
      */
     public static function findIdentityByAccessToken($token, $type = null) {
-        //return static::findOne(['auth_key' => $token, 'status' => self::STATUS_ACTIVE]);
-        throw new NotSupportedException('"findIdentityByAccessToken" is not implemented.');
+        return static::findOne(['auth_key' => $token, 'status' => self::STATUS_ACTIVE]);
+        //throw new NotSupportedException('"findIdentityByAccessToken" is not implemented.');
     }
 
     /**
@@ -239,19 +239,7 @@ class Person extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface 
     /**
      * Approvement for registered user
      */
-    public function approvement() {
-        if ($this->status === self::STATUS_APPROVE) {
-            $this->status = self::STATUS_ACTIVE;
-        } else {
-            throw new InvalidParamException('Error on change status for this person!!!');
-        }
+    public static function approvement($token) {
+        return static::findOne(['auth_key' => $token, 'status' => self::STATUS_APPROVE]);
     }
-    
-    /**
-     * Get Approve link for send to new user
-     */
-    public function generateApproveEmailToken() {
-        $this->password_reset_token = Yii::$app->security->generateRandomString() . '_' . time();
-    }
-
 }

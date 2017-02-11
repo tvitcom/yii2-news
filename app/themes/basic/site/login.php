@@ -4,13 +4,22 @@
 /* @var $model app\models\LoginForm */
 
 use yii\helpers\Html;
+use yii\bootstrap\Alert;
 use yii\bootstrap\ActiveForm;
 
 $this->title = 'Login';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
+
+<?php if (Yii::$app->session->hasFlash('alert')) { ?>
+<?= Alert::widget([
+   'options' => ['class' => 'alert-info'],
+   'body' => Yii::$app->session->getFlash('success'),
+]);?>
+<?php } ?>
+
 <div class="site-login">
-    <h1><?= Html::encode($this->title) ?> or <?= Html::a('signup', ['/site/register']) ?></h1>
+    <h1><?= yii\helpers\Html::encode($this->title) ?> or <?= yii\helpers\Html::a('signup', ['/site/register']) ?></h1>
     <p>Please fill out the follow fields:</p>
 
     <?php

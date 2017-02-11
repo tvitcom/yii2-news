@@ -51,7 +51,7 @@ class SignupForm extends Model {
             'email' => Yii::t('app', 'E-mail'),
             'password' => Yii::t('app', 'Password'),
             'password_repeat'=> Yii::t('app','Repeat password'),
-            'rememberMe' => Yii::t('app', 'Remember login and password'),
+            'rememberMe' => Yii::t('app', 'Remember in browser the login and password'),
             'verifyCode'=> Yii::t('app','Verify captcha code:'),
         ];
     }
@@ -71,6 +71,7 @@ class SignupForm extends Model {
         $user->email = $this->email;
         $user->setPassword($this->password);
         $user->generateAuthKey();
+        $user->status = Person::STATUS_APPROVE;
         $user->created_at = '2000-01-01 00:00:00';
         $user->updated_at = '2000-01-01 00:00:00';
 
@@ -93,7 +94,7 @@ class SignupForm extends Model {
         ]);
 
         if (!$user) {
-            return false;
+            throw new InvalidParamException('Error send approve mail to new user!!!');
         }
         
         if ($approval_token = $this->createSecretLink($user->auth_key.$user->id)) {
@@ -116,9 +117,9 @@ class SignupForm extends Model {
     /**
      * Create secret link for the user as uniq secrete link
      */
-    private function createSecretLink($str='') {
-        if (count($str)) {
-            return md5($str);
+    private function createSecretLink($user='') {
+        if ($user == true) {
+            return md5($user->auth_key);
         } else {
             return null;
         }

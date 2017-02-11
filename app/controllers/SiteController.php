@@ -4,6 +4,7 @@ namespace app\controllers;
 
 use Yii;
 use yii\web\Controller;
+use yii\helpers\Html;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
 use yii\filters\VerbFilter;
@@ -84,9 +85,9 @@ class SiteController extends Controller {
                         . 'further instructions.');
                     return $this->render('thanks');
                 } else {
-                    Yii::$app->session->setFlash('error', 'Sorry, we are unable to '
+                    Yii::$app->session->setFlash('alert', 'Sorry, we are unable to '
                         . 'approve your email - we awfully sorry. Register with another your valid email.');
-                    return $this->render('thanks');
+                    return $this->redirect(['site/login']);
                 }
             }
         }
@@ -101,7 +102,8 @@ class SiteController extends Controller {
      *
      * @return string
      */
-    public function actionLogin() {
+    public function actionLogin() 
+    {  
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
         }
@@ -128,8 +130,9 @@ class SiteController extends Controller {
                     . 'further instructions.');
                 return $this->render('thanks');
             } else {
-                Yii::$app->session->setFlash('error', 'Sorry, we are unable to '
+                Yii::$app->session->setFlash('alert', 'Sorry, we are unable to '
                     . 'reset password for email provided.');
+                return $this->redirect(['site/login']);
             }
         }
 
@@ -146,11 +149,11 @@ class SiteController extends Controller {
      * @throws BadRequestHttpException
      */
     public function actionResetPassword($token) {
-        try {
-            $model = new ResetPasswordForm($token);
-        } catch (InvalidParamException $e) {
-            throw new BadRequestHttpException($e->getMessage());
-        }
+            try {
+                $model = new ResetPasswordForm($token);
+            } catch (InvalidParamException $e) {
+                throw new BadRequestHttpException($e->getMessage());
+            }
 
         if ($model->load(Yii::$app->request->post()) && $model->validate() && $model->resetPassword()) {
             Yii::$app->session->setFlash('success', 'New password was saved.');
@@ -171,21 +174,19 @@ class SiteController extends Controller {
      * @throws BadRequestHttpException
      */
     public function actionApprovalEmail($token) {
-        try {
-            $model = new ResetPasswordForm($token);
-        } catch (InvalidParamException $e) {
-            throw new BadRequestHttpException($e->getMessage());
+        $model = new Person;  
+        
+        if ($user = $model->approvement($token)) {
+            \Yii::$app->session->setFlash('success', 'New user now is registered.');
+            return $this->render('room', [
+                'user' => $user,
+            ]);
+        } else {
+            \Yii::$app->session->setFlash('warning', 'Bad link - registration unaviable!');
+            return $this->redirect(['site/login']);
         }
 
-        if ($model->load(Yii::$app->request->post()) && $model->validate() && $model->resetPassword()) {
-            \Yii::$app->session->setFlash('success', 'New password was saved.');
-
-            return $this->goHome();
-        }
-
-        return $this->render('resetPassword', [
-                'model' => $model,
-        ]);
+        
     }
 
     /**
