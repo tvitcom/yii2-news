@@ -11,14 +11,6 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-login">
     <h1><?= Html::encode($this->title) ?> or <?= Html::a('signup', ['/site/register']) ?></h1>
-    <p><?php $p_hash = Yii::$app->security->generatePasswordHash('123456'); echo 'p_hash: ' . $p_hash; ?>
-        <br>
-        <?php
-        if (Yii::$app->security->validatePassword('123456', $p_hash))
-            echo 'pass valid:123456';
-        else
-            echo 'none valid';
-        ?></p>
     <p>Please fill out the follow fields:</p>
 
     <?php

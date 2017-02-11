@@ -58,7 +58,7 @@ $config = [
                     'sourceLanguage' => 'en-US',
                     'fileMap' => [
                         'app' => 'app.php',
-                        'app/error' => 'error.php',
+                        //'app/error' => 'error.php',
                     ],
                 ],
             ],

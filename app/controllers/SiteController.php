@@ -79,9 +79,18 @@ class SiteController extends Controller {
         $model = new SignupForm();
         if ($model->load(Yii::$app->request->post())) {
             if ($user = $model->signup()) {
+                /*
                 if (Yii::$app->getUser()->login($user)) {
                     return $this->goHome();
-                }
+                }*/
+            if ($model->sendEmail()) {
+                Yii::$app->session->setFlash('success', 'Check your email for '
+                    . 'further instructions.');
+                return $this->render('thanks');
+            } else {
+                Yii::$app->session->setFlash('error', 'Sorry, we are unable to '
+                    . 'reset password for email provided.');
+            }
             }
         }
 
@@ -147,7 +156,7 @@ class SiteController extends Controller {
         }
 
         if ($model->load(Yii::$app->request->post()) && $model->validate() && $model->resetPassword()) {
-            Yii::$app->session->setFlash('success', 'New password was saved.');
+            \Yii::$app->session->setFlash('success', 'New password was saved.');
 
             return $this->goHome();
         }

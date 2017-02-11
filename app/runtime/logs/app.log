@@ -6753,3 +6753,1311 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1486363053.281
     'REQUEST_TIME' => 1486363053
 ]
+2017-02-10 09:48:21 [127.0.0.1][-][-][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'Module 'xdebug' already loaded' in Unknown:0
+Stack trace:
+#0 {main}
+2017-02-10 09:48:20 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '8779c4d9e525c11edb1d537efe7fa3784cd090e639da252df299e3d1e7bc8f18a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"l84zQAjCcO4_2HGqJ5hdSce4r9lswGYe\";}'
+    'SID' => 'jnrvg1aa50hq203lid4ev8g8l5'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=8779c4d9e525c11edb1d537efe7fa3784cd090e639da252df299e3d1e7bc8f18a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22l84zQAjCcO4_2HGqJ5hdSce4r9lswGYe%22%3B%7D; SID=jnrvg1aa50hq203lid4ev8g8l5'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '60532'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486720100.362
+    'REQUEST_TIME' => 1486720100
+]
+2017-02-10 09:48:35 [127.0.0.1][-][tlnm8aqacuet3dbpj3q8581ej6][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'Module 'xdebug' already loaded' in Unknown:0
+Stack trace:
+#0 {main}
+2017-02-10 09:48:35 [127.0.0.1][-][tlnm8aqacuet3dbpj3q8581ej6][info][application] $_GET = [
+    'r' => 'site/register'
+]
+
+$_COOKIE = [
+    '_csrf' => '3cddb55977774e880a872f64324b5588489648fc3c5cea4c3b74517ec19305a7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4ERUD-hQ6dsCVrwZNagW6Lc8G0zRahGP\";}'
+    'SID' => 'jnrvg1aa50hq203lid4ev8g8l5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'qkgopot'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://news/'
+    'HTTP_COOKIE' => '_csrf=3cddb55977774e880a872f64324b5588489648fc3c5cea4c3b74517ec19305a7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224ERUD-hQ6dsCVrwZNagW6Lc8G0zRahGP%22%3B%7D; SID=jnrvg1aa50hq203lid4ev8g8l5'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '60544'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fregister'
+    'REQUEST_URI' => '/index.php?r=site%2Fregister'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486720115.18
+    'REQUEST_TIME' => 1486720115
+]
+2017-02-10 17:23:42 [127.0.0.1][-][tlnm8aqacuet3dbpj3q8581ej6][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'Module 'xdebug' already loaded' in Unknown:0
+Stack trace:
+#0 {main}
+2017-02-10 17:23:40 [127.0.0.1][-][tlnm8aqacuet3dbpj3q8581ej6][info][application] $_GET = [
+    'r' => 'site/register'
+]
+
+$_COOKIE = [
+    '_csrf' => '3cddb55977774e880a872f64324b5588489648fc3c5cea4c3b74517ec19305a7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4ERUD-hQ6dsCVrwZNagW6Lc8G0zRahGP\";}'
+    'SID' => 'jnrvg1aa50hq203lid4ev8g8l5'
+    'PHPSESSID' => 'tlnm8aqacuet3dbpj3q8581ej6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'qkgopot'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://news/'
+    'HTTP_COOKIE' => '_csrf=3cddb55977774e880a872f64324b5588489648fc3c5cea4c3b74517ec19305a7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224ERUD-hQ6dsCVrwZNagW6Lc8G0zRahGP%22%3B%7D; SID=jnrvg1aa50hq203lid4ev8g8l5; PHPSESSID=tlnm8aqacuet3dbpj3q8581ej6'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '53670'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fregister'
+    'REQUEST_URI' => '/index.php?r=site%2Fregister'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486747419.223
+    'REQUEST_TIME' => 1486747419
+]
+2017-02-10 17:23:52 [127.0.0.1][-][tlnm8aqacuet3dbpj3q8581ej6][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'Module 'xdebug' already loaded' in Unknown:0
+Stack trace:
+#0 {main}
+2017-02-10 17:23:52 [127.0.0.1][-][tlnm8aqacuet3dbpj3q8581ej6][info][application] $_GET = [
+    'r' => 'site/captcha'
+    'v' => '589df71e6a808'
+]
+
+$_COOKIE = [
+    '_csrf' => '3cddb55977774e880a872f64324b5588489648fc3c5cea4c3b74517ec19305a7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4ERUD-hQ6dsCVrwZNagW6Lc8G0zRahGP\";}'
+    'SID' => 'jnrvg1aa50hq203lid4ev8g8l5'
+    'PHPSESSID' => 'tlnm8aqacuet3dbpj3q8581ej6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'qkgopot'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://news/index.php?r=site%2Fregister'
+    'HTTP_COOKIE' => '_csrf=3cddb55977774e880a872f64324b5588489648fc3c5cea4c3b74517ec19305a7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224ERUD-hQ6dsCVrwZNagW6Lc8G0zRahGP%22%3B%7D; SID=jnrvg1aa50hq203lid4ev8g8l5; PHPSESSID=tlnm8aqacuet3dbpj3q8581ej6'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '53676'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fcaptcha&v=589df71e6a808'
+    'REQUEST_URI' => '/index.php?r=site%2Fcaptcha&v=589df71e6a808'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486747432.245
+    'REQUEST_TIME' => 1486747432
+]
+2017-02-10 17:51:17 [127.0.0.1][-][tlnm8aqacuet3dbpj3q8581ej6][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'Module 'xdebug' already loaded' in Unknown:0
+Stack trace:
+#0 {main}
+2017-02-10 17:51:16 [127.0.0.1][-][tlnm8aqacuet3dbpj3q8581ej6][info][application] $_GET = [
+    'r' => 'site/register'
+]
+
+$_COOKIE = [
+    '_csrf' => '3cddb55977774e880a872f64324b5588489648fc3c5cea4c3b74517ec19305a7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4ERUD-hQ6dsCVrwZNagW6Lc8G0zRahGP\";}'
+    'SID' => 'jnrvg1aa50hq203lid4ev8g8l5'
+    'PHPSESSID' => 'tlnm8aqacuet3dbpj3q8581ej6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'qkgopot'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://news/'
+    'HTTP_COOKIE' => '_csrf=3cddb55977774e880a872f64324b5588489648fc3c5cea4c3b74517ec19305a7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224ERUD-hQ6dsCVrwZNagW6Lc8G0zRahGP%22%3B%7D; SID=jnrvg1aa50hq203lid4ev8g8l5; PHPSESSID=tlnm8aqacuet3dbpj3q8581ej6'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '54064'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fregister'
+    'REQUEST_URI' => '/index.php?r=site%2Fregister'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486749075.933
+    'REQUEST_TIME' => 1486749075
+]
+2017-02-10 17:54:20 [127.0.0.1][-][tlnm8aqacuet3dbpj3q8581ej6][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'Module 'xdebug' already loaded' in Unknown:0
+Stack trace:
+#0 {main}
+2017-02-10 17:54:20 [127.0.0.1][-][tlnm8aqacuet3dbpj3q8581ej6][info][application] $_GET = [
+    'r' => 'site/register'
+]
+
+$_COOKIE = [
+    '_csrf' => '3cddb55977774e880a872f64324b5588489648fc3c5cea4c3b74517ec19305a7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4ERUD-hQ6dsCVrwZNagW6Lc8G0zRahGP\";}'
+    'SID' => 'jnrvg1aa50hq203lid4ev8g8l5'
+    'PHPSESSID' => 'tlnm8aqacuet3dbpj3q8581ej6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'qkgopot'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://news/'
+    'HTTP_COOKIE' => '_csrf=3cddb55977774e880a872f64324b5588489648fc3c5cea4c3b74517ec19305a7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224ERUD-hQ6dsCVrwZNagW6Lc8G0zRahGP%22%3B%7D; SID=jnrvg1aa50hq203lid4ev8g8l5; PHPSESSID=tlnm8aqacuet3dbpj3q8581ej6'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '54068'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fregister'
+    'REQUEST_URI' => '/index.php?r=site%2Fregister'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486749260.488
+    'REQUEST_TIME' => 1486749260
+]
+2017-02-10 17:57:51 [127.0.0.1][-][tlnm8aqacuet3dbpj3q8581ej6][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\models\Yii' not found' in /srv/Sites/news/app/models/SignupForm.php:49
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2-bootstrap/ActiveField.php(403): yii\base\Model->getAttributeLabel()
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2-bootstrap/ActiveField.php(176): yii\bootstrap\ActiveField->renderLabelParts()
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/widgets/ActiveField.php(176): yii\bootstrap\ActiveField->render()
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/base/View.php(22): yii\widgets\ActiveField->__toString()
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/base/View.php(328): ::unknown()
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#6 /srv/Sites/news/app/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile()
+#7 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render()
+#8 /srv/Sites/news/app/controllers/SiteController.php(90): yii\base\Controller->render()
+#9 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionRegister()
+#10 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array()
+#11 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#12 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#13 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#14 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#15 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#16 {main}
+2017-02-10 17:57:51 [127.0.0.1][-][tlnm8aqacuet3dbpj3q8581ej6][info][application] $_GET = [
+    'r' => 'site/register'
+]
+
+$_COOKIE = [
+    '_csrf' => '3cddb55977774e880a872f64324b5588489648fc3c5cea4c3b74517ec19305a7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4ERUD-hQ6dsCVrwZNagW6Lc8G0zRahGP\";}'
+    'SID' => 'jnrvg1aa50hq203lid4ev8g8l5'
+    'PHPSESSID' => 'tlnm8aqacuet3dbpj3q8581ej6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'qkgopot'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://news/'
+    'HTTP_COOKIE' => '_csrf=3cddb55977774e880a872f64324b5588489648fc3c5cea4c3b74517ec19305a7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224ERUD-hQ6dsCVrwZNagW6Lc8G0zRahGP%22%3B%7D; SID=jnrvg1aa50hq203lid4ev8g8l5; PHPSESSID=tlnm8aqacuet3dbpj3q8581ej6'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '54074'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fregister'
+    'REQUEST_URI' => '/index.php?r=site%2Fregister'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486749471.202
+    'REQUEST_TIME' => 1486749471
+]
+2017-02-10 17:58:54 [127.0.0.1][-][tlnm8aqacuet3dbpj3q8581ej6][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'Module 'xdebug' already loaded' in Unknown:0
+Stack trace:
+#0 {main}
+2017-02-10 17:58:54 [127.0.0.1][-][tlnm8aqacuet3dbpj3q8581ej6][info][application] $_GET = [
+    'r' => 'site/register'
+]
+
+$_COOKIE = [
+    '_csrf' => '3cddb55977774e880a872f64324b5588489648fc3c5cea4c3b74517ec19305a7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4ERUD-hQ6dsCVrwZNagW6Lc8G0zRahGP\";}'
+    'SID' => 'jnrvg1aa50hq203lid4ev8g8l5'
+    'PHPSESSID' => 'tlnm8aqacuet3dbpj3q8581ej6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'qkgopot'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://news/'
+    'HTTP_COOKIE' => '_csrf=3cddb55977774e880a872f64324b5588489648fc3c5cea4c3b74517ec19305a7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224ERUD-hQ6dsCVrwZNagW6Lc8G0zRahGP%22%3B%7D; SID=jnrvg1aa50hq203lid4ev8g8l5; PHPSESSID=tlnm8aqacuet3dbpj3q8581ej6'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '54076'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fregister'
+    'REQUEST_URI' => '/index.php?r=site%2Fregister'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486749534.277
+    'REQUEST_TIME' => 1486749534
+]
+2017-02-10 20:42:57 [127.0.0.1][-][tlnm8aqacuet3dbpj3q8581ej6][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'news'@'localhost' (using password: YES)' in /srv/Sites/news/app/vendor/yiisoft/yii2/db/Connection.php:630
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/db/Connection.php(630): PDO->__construct('mysql:host=loca...', 'news', 'pass_to_news', NULL)
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/db/Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/db/Schema.php(483): yii\db\Connection->getSlavePdo()
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/db/Connection.php(792): yii\db\Schema->quoteValue('<span class="st...')
+#6 /srv/Sites/news/app/vendor/yiisoft/yii2/db/Command.php(175): yii\db\Connection->quoteValue('<span class="st...')
+#7 /srv/Sites/news/app/vendor/yiisoft/yii2/db/Command.php(871): yii\db\Command->getRawSql()
+#8 /srv/Sites/news/app/vendor/yiisoft/yii2/db/Command.php(388): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#9 /srv/Sites/news/app/vendor/yiisoft/yii2/db/Query.php(395): yii\db\Command->queryScalar()
+#10 /srv/Sites/news/app/vendor/yiisoft/yii2/validators/UniqueValidator.php(162): yii\db\Query->exists()
+#11 /srv/Sites/news/app/vendor/yiisoft/yii2/validators/UniqueValidator.php(135): yii\validators\UniqueValidator->modelExists('<span class="st...', '[<span class="s...', Object(app\models\SignupForm))
+#12 /srv/Sites/news/app/vendor/yiisoft/yii2/validators/Validator.php(267): yii\validators\UniqueValidator->validateAttribute(Object(app\models\SignupForm), '<span class="st...')
+#13 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Model.php(358): yii\validators\Validator->validateAttributes(Object(app\models\SignupForm), '[<span class="s...')
+#14 /srv/Sites/news/app/models/SignupForm.php(65): yii\base\Model->validate()
+#15 /srv/Sites/news/app/controllers/SiteController.php(81): app\models\SignupForm->signup()
+#16 [internal function]: app\controllers\SiteController->actionRegister()
+#17 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#18 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#19 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#20 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#21 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#23 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[28000] [1045] Access denied for user 'news'@'localhost' (using password: YES)' in /srv/Sites/news/app/vendor/yiisoft/yii2/db/Connection.php:568
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/db/Connection.php(896): yii\db\Connection->open()
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/db/Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/db/Schema.php(483): yii\db\Connection->getSlavePdo()
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/db/Connection.php(792): yii\db\Schema->quoteValue('<span class="st...')
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/db/Command.php(175): yii\db\Connection->quoteValue('<span class="st...')
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/db/Command.php(871): yii\db\Command->getRawSql()
+#6 /srv/Sites/news/app/vendor/yiisoft/yii2/db/Command.php(388): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#7 /srv/Sites/news/app/vendor/yiisoft/yii2/db/Query.php(395): yii\db\Command->queryScalar()
+#8 /srv/Sites/news/app/vendor/yiisoft/yii2/validators/UniqueValidator.php(162): yii\db\Query->exists()
+#9 /srv/Sites/news/app/vendor/yiisoft/yii2/validators/UniqueValidator.php(135): yii\validators\UniqueValidator->modelExists('<span class="st...', '[<span class="s...', Object(app\models\SignupForm))
+#10 /srv/Sites/news/app/vendor/yiisoft/yii2/validators/Validator.php(267): yii\validators\UniqueValidator->validateAttribute(Object(app\models\SignupForm), '<span class="st...')
+#11 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Model.php(358): yii\validators\Validator->validateAttributes(Object(app\models\SignupForm), '[<span class="s...')
+#12 /srv/Sites/news/app/models/SignupForm.php(65): yii\base\Model->validate()
+#13 /srv/Sites/news/app/controllers/SiteController.php(81): app\models\SignupForm->signup()
+#14 [internal function]: app\controllers\SiteController->actionRegister()
+#15 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#16 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#17 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#18 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#19 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#21 {main}
+Additional Information:
+
+2017-02-10 20:42:55 [127.0.0.1][-][tlnm8aqacuet3dbpj3q8581ej6][info][application] $_GET = [
+    'r' => 'site/register'
+]
+
+$_POST = [
+    '_csrf' => 'OC1BRHZkbG0MaBMRMkkEPA5JMgcgFhs3dkwmE0AoD1V/HTsWFwwrPQ=='
+    'SignupForm' => [
+        'username' => 'user5'
+        'email' => 'user5@mail.ruru'
+        'password' => 'pass_to_news'
+        'password_repeat' => 'pass_to_news'
+        'verifyCode' => 'yvnqvih'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => '3cddb55977774e880a872f64324b5588489648fc3c5cea4c3b74517ec19305a7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4ERUD-hQ6dsCVrwZNagW6Lc8G0zRahGP\";}'
+    'SID' => 'jnrvg1aa50hq203lid4ev8g8l5'
+    'PHPSESSID' => 'tlnm8aqacuet3dbpj3q8581ej6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'yvnqvih'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://news/index.php?r=site%2Fregister'
+    'HTTP_COOKIE' => '_csrf=3cddb55977774e880a872f64324b5588489648fc3c5cea4c3b74517ec19305a7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224ERUD-hQ6dsCVrwZNagW6Lc8G0zRahGP%22%3B%7D; SID=jnrvg1aa50hq203lid4ev8g8l5; PHPSESSID=tlnm8aqacuet3dbpj3q8581ej6'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '272'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '56352'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fregister'
+    'REQUEST_URI' => '/index.php?r=site%2Fregister'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486759373.558
+    'REQUEST_TIME' => 1486759373
+]
+2017-02-10 20:45:45 [127.0.0.1][-][tlnm8aqacuet3dbpj3q8581ej6][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'error saved model person!!!' in /srv/Sites/news/app/models/SignupForm.php:78
+Stack trace:
+#0 /srv/Sites/news/app/controllers/SiteController.php(81): app\models\SignupForm->signup()
+#1 [internal function]: app\controllers\SiteController->actionRegister()
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('register', Array)
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/register', Array)
+#6 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#8 {main}
+2017-02-10 20:45:44 [127.0.0.1][-][tlnm8aqacuet3dbpj3q8581ej6][info][application] $_GET = [
+    'r' => 'site/register'
+]
+
+$_POST = [
+    '_csrf' => 'aUxiVEJpSWVdCTABBkQhNF8oERcUGz4/Jy0FA3QlKl0ufBgGIwEONQ=='
+    'SignupForm' => [
+        'username' => 'user5'
+        'email' => 'user5@mail.ruru'
+        'password' => 'pass_to_news'
+        'password_repeat' => 'pass_to_news'
+        'verifyCode' => 'yvnqvih'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => '3cddb55977774e880a872f64324b5588489648fc3c5cea4c3b74517ec19305a7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4ERUD-hQ6dsCVrwZNagW6Lc8G0zRahGP\";}'
+    'SID' => 'jnrvg1aa50hq203lid4ev8g8l5'
+    'PHPSESSID' => 'tlnm8aqacuet3dbpj3q8581ej6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'lunihug'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://news/index.php?r=site%2Fregister'
+    'HTTP_COOKIE' => '_csrf=3cddb55977774e880a872f64324b5588489648fc3c5cea4c3b74517ec19305a7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224ERUD-hQ6dsCVrwZNagW6Lc8G0zRahGP%22%3B%7D; SID=jnrvg1aa50hq203lid4ev8g8l5; PHPSESSID=tlnm8aqacuet3dbpj3q8581ej6'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '272'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '56432'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fregister'
+    'REQUEST_URI' => '/index.php?r=site%2Fregister'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486759544.263
+    'REQUEST_TIME' => 1486759544
+]
+2017-02-10 20:55:33 [127.0.0.1][-][tlnm8aqacuet3dbpj3q8581ej6][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'error saved model person!!!' in /srv/Sites/news/app/models/SignupForm.php:78
+Stack trace:
+#0 /srv/Sites/news/app/controllers/SiteController.php(81): app\models\SignupForm->signup()
+#1 [internal function]: app\controllers\SiteController->actionRegister()
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('register', Array)
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/register', Array)
+#6 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#8 {main}
+2017-02-10 20:55:32 [127.0.0.1][-][tlnm8aqacuet3dbpj3q8581ej6][info][application] $_GET = [
+    'r' => 'site/register'
+]
+
+$_POST = [
+    '_csrf' => 'OHNLZHBqQVIMNhkxNEcpAw4XOCcmGDYIdhIsM0YmImp/QzE2EQIGAg=='
+    'SignupForm' => [
+        'username' => 'user5'
+        'email' => 'user5@mail.ruru'
+        'password' => 'pass_to_news'
+        'password_repeat' => 'pass_to_news'
+        'verifyCode' => 'lunihug'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => '3cddb55977774e880a872f64324b5588489648fc3c5cea4c3b74517ec19305a7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4ERUD-hQ6dsCVrwZNagW6Lc8G0zRahGP\";}'
+    'SID' => 'jnrvg1aa50hq203lid4ev8g8l5'
+    'PHPSESSID' => 'tlnm8aqacuet3dbpj3q8581ej6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'jbrwcyn'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://news/index.php?r=site%2Fregister'
+    'HTTP_COOKIE' => '_csrf=3cddb55977774e880a872f64324b5588489648fc3c5cea4c3b74517ec19305a7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224ERUD-hQ6dsCVrwZNagW6Lc8G0zRahGP%22%3B%7D; SID=jnrvg1aa50hq203lid4ev8g8l5; PHPSESSID=tlnm8aqacuet3dbpj3q8581ej6'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '272'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '56542'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fregister'
+    'REQUEST_URI' => '/index.php?r=site%2Fregister'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486760132.071
+    'REQUEST_TIME' => 1486760132
+]
+2017-02-11 06:43:27 [127.0.0.1][-][tlnm8aqacuet3dbpj3q8581ej6][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\models\SignupForm::password_repeat' in /srv/Sites/news/app/vendor/yiisoft/yii2/base/Component.php:147
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/helpers/BaseHtml.php(2081): yii\base\Component->__get('password_repeat')
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/helpers/BaseHtml.php(1264): yii\helpers\BaseHtml::getAttributeValue(Object(app\models\SignupForm), 'password_repeat')
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/helpers/BaseHtml.php(1354): yii\helpers\BaseHtml::activeInput('password', Object(app\models\SignupForm), 'password_repeat', Array)
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/widgets/ActiveField.php(441): yii\helpers\BaseHtml::activePasswordInput(Object(app\models\SignupForm), 'password_repeat', Array)
+#4 /srv/Sites/news/app/themes/basic/site/signup.php(30): yii\widgets\ActiveField->passwordInput()
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/base/View.php(328): require('/srv/Sites/news...')
+#6 /srv/Sites/news/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/srv/Sites/news...', Array)
+#7 /srv/Sites/news/app/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/srv/Sites/news...', Array, Object(app\controllers\SiteController))
+#8 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('signup', Array, Object(app\controllers\SiteController))
+#9 /srv/Sites/news/app/controllers/SiteController.php(90): yii\base\Controller->render('signup', Array)
+#10 [internal function]: app\controllers\SiteController->actionRegister()
+#11 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('register', Array)
+#14 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/register', Array)
+#15 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#17 {main}
+2017-02-11 06:43:26 [127.0.0.1][-][tlnm8aqacuet3dbpj3q8581ej6][info][application] $_GET = [
+    'r' => 'site/register'
+]
+
+$_COOKIE = [
+    '_csrf' => '3cddb55977774e880a872f64324b5588489648fc3c5cea4c3b74517ec19305a7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4ERUD-hQ6dsCVrwZNagW6Lc8G0zRahGP\";}'
+    'SID' => 'jnrvg1aa50hq203lid4ev8g8l5'
+    'PHPSESSID' => 'tlnm8aqacuet3dbpj3q8581ej6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'nnnnfsp'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://news/index.php?r=site%2Fregister'
+    'HTTP_COOKIE' => '_csrf=3cddb55977774e880a872f64324b5588489648fc3c5cea4c3b74517ec19305a7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224ERUD-hQ6dsCVrwZNagW6Lc8G0zRahGP%22%3B%7D; SID=jnrvg1aa50hq203lid4ev8g8l5; PHPSESSID=tlnm8aqacuet3dbpj3q8581ej6'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '41032'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fregister'
+    'REQUEST_URI' => '/index.php?r=site%2Fregister'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486795406.177
+    'REQUEST_TIME' => 1486795406
+]
+2017-02-11 06:46:44 [127.0.0.1][-][tlnm8aqacuet3dbpj3q8581ej6][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'Module 'xdebug' already loaded' in Unknown:0
+Stack trace:
+#0 {main}
+2017-02-11 06:46:44 [127.0.0.1][-][tlnm8aqacuet3dbpj3q8581ej6][info][application] $_GET = [
+    'r' => 'site/register'
+]
+
+$_COOKIE = [
+    '_csrf' => '3cddb55977774e880a872f64324b5588489648fc3c5cea4c3b74517ec19305a7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4ERUD-hQ6dsCVrwZNagW6Lc8G0zRahGP\";}'
+    'SID' => 'jnrvg1aa50hq203lid4ev8g8l5'
+    'PHPSESSID' => 'tlnm8aqacuet3dbpj3q8581ej6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'nnnnfsp'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=3cddb55977774e880a872f64324b5588489648fc3c5cea4c3b74517ec19305a7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224ERUD-hQ6dsCVrwZNagW6Lc8G0zRahGP%22%3B%7D; SID=jnrvg1aa50hq203lid4ev8g8l5; PHPSESSID=tlnm8aqacuet3dbpj3q8581ej6'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '41070'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fregister'
+    'REQUEST_URI' => '/index.php?r=site%2Fregister'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486795604.662
+    'REQUEST_TIME' => 1486795604
+]
+2017-02-11 06:47:08 [127.0.0.1][6][7p4dp5ko9ifr64cosm5e8ak7g5][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'Module 'xdebug' already loaded' in Unknown:0
+Stack trace:
+#0 {main}
+2017-02-11 06:47:07 [127.0.0.1][6][7p4dp5ko9ifr64cosm5e8ak7g5][info][application] $_GET = [
+    'r' => 'site/register'
+]
+
+$_POST = [
+    '_csrf' => 'VVI1UXctOHJhF2cEMwBQI2M2RhIhX08oGzNSBkFhW0oSYk8DFkV/Ig=='
+    'SignupForm' => [
+        'username' => 'user5'
+        'email' => 'user5@mail.ruru'
+        'password' => 'pass_to_news'
+        'password_repeat' => 'pass_to_news'
+        'verifyCode' => 'nnnnfsp'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => '3cddb55977774e880a872f64324b5588489648fc3c5cea4c3b74517ec19305a7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4ERUD-hQ6dsCVrwZNagW6Lc8G0zRahGP\";}'
+    'SID' => 'jnrvg1aa50hq203lid4ev8g8l5'
+    'PHPSESSID' => 'tlnm8aqacuet3dbpj3q8581ej6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'muyekav'
+    '__captcha/site/captchacount' => 1
+    '__id' => '6'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://news/index.php?r=site%2Fregister'
+    'HTTP_COOKIE' => '_csrf=3cddb55977774e880a872f64324b5588489648fc3c5cea4c3b74517ec19305a7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224ERUD-hQ6dsCVrwZNagW6Lc8G0zRahGP%22%3B%7D; SID=jnrvg1aa50hq203lid4ev8g8l5; PHPSESSID=tlnm8aqacuet3dbpj3q8581ej6'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '272'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '41076'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fregister'
+    'REQUEST_URI' => '/index.php?r=site%2Fregister'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486795627.041
+    'REQUEST_TIME' => 1486795627
+]
+2017-02-11 06:49:51 [127.0.0.1][6][7p4dp5ko9ifr64cosm5e8ak7g5][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'Вам не разрешено производить данное действие.' in /srv/Sites/news/app/vendor/yiisoft/yii2/filters/AccessControl.php:151
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/filters/AccessControl.php(134): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(272): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('register', Array)
+#8 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/register', Array)
+#9 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-02-11 06:49:51 [127.0.0.1][6][7p4dp5ko9ifr64cosm5e8ak7g5][info][application] $_GET = [
+    'r' => 'site/register'
+]
+
+$_COOKIE = [
+    '_csrf' => '3cddb55977774e880a872f64324b5588489648fc3c5cea4c3b74517ec19305a7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4ERUD-hQ6dsCVrwZNagW6Lc8G0zRahGP\";}'
+    'SID' => 'jnrvg1aa50hq203lid4ev8g8l5'
+    'PHPSESSID' => '7p4dp5ko9ifr64cosm5e8ak7g5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'muyekav'
+    '__captcha/site/captchacount' => 1
+    '__id' => '6'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=3cddb55977774e880a872f64324b5588489648fc3c5cea4c3b74517ec19305a7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224ERUD-hQ6dsCVrwZNagW6Lc8G0zRahGP%22%3B%7D; SID=jnrvg1aa50hq203lid4ev8g8l5; PHPSESSID=7p4dp5ko9ifr64cosm5e8ak7g5'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '41114'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fregister'
+    'REQUEST_URI' => '/index.php?r=site%2Fregister'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486795791.546
+    'REQUEST_TIME' => 1486795791
+]
+2017-02-11 06:49:51 [127.0.0.1][6][7p4dp5ko9ifr64cosm5e8ak7g5][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'Module 'xdebug' already loaded' in Unknown:0
+Stack trace:
+#0 {main}
+2017-02-11 06:49:51 [127.0.0.1][6][7p4dp5ko9ifr64cosm5e8ak7g5][info][application] $_GET = [
+    'r' => 'site/register'
+]
+
+$_COOKIE = [
+    '_csrf' => '3cddb55977774e880a872f64324b5588489648fc3c5cea4c3b74517ec19305a7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4ERUD-hQ6dsCVrwZNagW6Lc8G0zRahGP\";}'
+    'SID' => 'jnrvg1aa50hq203lid4ev8g8l5'
+    'PHPSESSID' => '7p4dp5ko9ifr64cosm5e8ak7g5'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'muyekav'
+    '__captcha/site/captchacount' => 1
+    '__id' => '6'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=3cddb55977774e880a872f64324b5588489648fc3c5cea4c3b74517ec19305a7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224ERUD-hQ6dsCVrwZNagW6Lc8G0zRahGP%22%3B%7D; SID=jnrvg1aa50hq203lid4ev8g8l5; PHPSESSID=7p4dp5ko9ifr64cosm5e8ak7g5'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '41114'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fregister'
+    'REQUEST_URI' => '/index.php?r=site%2Fregister'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486795791.546
+    'REQUEST_TIME' => 1486795791
+]
+2017-02-11 12:34:22 [127.0.0.1][-][-][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'Module 'xdebug' already loaded' in Unknown:0
+Stack trace:
+#0 {main}
+2017-02-11 12:34:22 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://news/index.php?r=site%2Frecovery-password'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '41704'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486816461.832
+    'REQUEST_TIME' => 1486816461
+]
+2017-02-11 12:38:35 [127.0.0.1][-][-][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'Module 'xdebug' already loaded' in Unknown:0
+Stack trace:
+#0 {main}
+2017-02-11 12:38:35 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '965f2e745da0ae0cea0a7ecb5dcd50cb9f0aa39127a3ace2454949dfd20fd806a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"l0lVsLQYQNn9k80BnfLqd307y3fEaA0i\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=965f2e745da0ae0cea0a7ecb5dcd50cb9f0aa39127a3ace2454949dfd20fd806a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22l0lVsLQYQNn9k80BnfLqd307y3fEaA0i%22%3B%7D'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '41760'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486816714.968
+    'REQUEST_TIME' => 1486816714
+]
+2017-02-11 12:38:43 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ')'' in /srv/Sites/news/app/models/SignupForm.php:115
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(79): ::spl_autoload_call()
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionRegister()
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array()
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#6 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#7 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#8 {main}
+2017-02-11 12:38:43 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/register'
+]
+
+$_COOKIE = [
+    '_csrf' => '965f2e745da0ae0cea0a7ecb5dcd50cb9f0aa39127a3ace2454949dfd20fd806a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"l0lVsLQYQNn9k80BnfLqd307y3fEaA0i\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://news/'
+    'HTTP_COOKIE' => '_csrf=965f2e745da0ae0cea0a7ecb5dcd50cb9f0aa39127a3ace2454949dfd20fd806a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22l0lVsLQYQNn9k80BnfLqd307y3fEaA0i%22%3B%7D'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '41772'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fregister'
+    'REQUEST_URI' => '/index.php?r=site%2Fregister'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486816723.177
+    'REQUEST_TIME' => 1486816723
+]
+2017-02-11 12:39:56 [127.0.0.1][-][4ukubj78f07je18nsacshqqte6][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'Module 'xdebug' already loaded' in Unknown:0
+Stack trace:
+#0 {main}
+2017-02-11 12:39:56 [127.0.0.1][-][4ukubj78f07je18nsacshqqte6][info][application] $_COOKIE = [
+    '_csrf' => '965f2e745da0ae0cea0a7ecb5dcd50cb9f0aa39127a3ace2454949dfd20fd806a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"l0lVsLQYQNn9k80BnfLqd307y3fEaA0i\";}'
+    'PHPSESSID' => '4ukubj78f07je18nsacshqqte6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'gmsakw'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://news/index.php?r=site%2Fregister'
+    'HTTP_COOKIE' => '_csrf=965f2e745da0ae0cea0a7ecb5dcd50cb9f0aa39127a3ace2454949dfd20fd806a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22l0lVsLQYQNn9k80BnfLqd307y3fEaA0i%22%3B%7D; PHPSESSID=4ukubj78f07je18nsacshqqte6'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '41786'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/index.php'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486816796.678
+    'REQUEST_TIME' => 1486816796
+]
+2017-02-11 12:40:05 [127.0.0.1][-][4ukubj78f07je18nsacshqqte6][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'Module 'xdebug' already loaded' in Unknown:0
+Stack trace:
+#0 {main}
+2017-02-11 12:40:02 [127.0.0.1][-][4ukubj78f07je18nsacshqqte6][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    '_csrf' => '965f2e745da0ae0cea0a7ecb5dcd50cb9f0aa39127a3ace2454949dfd20fd806a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"l0lVsLQYQNn9k80BnfLqd307y3fEaA0i\";}'
+    'PHPSESSID' => '4ukubj78f07je18nsacshqqte6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'gmsakw'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://news/index.php?r=site%2Fregister'
+    'HTTP_COOKIE' => '_csrf=965f2e745da0ae0cea0a7ecb5dcd50cb9f0aa39127a3ace2454949dfd20fd806a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22l0lVsLQYQNn9k80BnfLqd307y3fEaA0i%22%3B%7D; PHPSESSID=4ukubj78f07je18nsacshqqte6'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '41788'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486816802.858
+    'REQUEST_TIME' => 1486816802
+]
+2017-02-11 12:40:48 [127.0.0.1][-][4ukubj78f07je18nsacshqqte6][error][yii\base\ErrorException:32] exception 'yii\base\ErrorException' with message 'Module 'xdebug' already loaded' in Unknown:0
+Stack trace:
+#0 {main}
+2017-02-11 12:40:48 [127.0.0.1][-][4ukubj78f07je18nsacshqqte6][info][application] $_GET = [
+    'r' => 'site/register'
+]
+
+$_COOKIE = [
+    '_csrf' => '965f2e745da0ae0cea0a7ecb5dcd50cb9f0aa39127a3ace2454949dfd20fd806a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"l0lVsLQYQNn9k80BnfLqd307y3fEaA0i\";}'
+    'PHPSESSID' => '4ukubj78f07je18nsacshqqte6'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'gmsakw'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://news/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => '_csrf=965f2e745da0ae0cea0a7ecb5dcd50cb9f0aa39127a3ace2454949dfd20fd806a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22l0lVsLQYQNn9k80BnfLqd307y3fEaA0i%22%3B%7D; PHPSESSID=4ukubj78f07je18nsacshqqte6'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '41822'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fregister'
+    'REQUEST_URI' => '/index.php?r=site%2Fregister'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486816848.744
+    'REQUEST_TIME' => 1486816848
+]

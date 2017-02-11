@@ -85,6 +85,7 @@ class Person extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface 
     /* -------- PART FOR AUTHENTICATION USER IN APPLICATION ---- */
 
     const STATUS_DELETED = 0;
+    const STATUS_APPROVE = 1;
     const STATUS_ACTIVE = 10;
 
     /**
@@ -113,6 +114,7 @@ class Person extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface 
      * @inheritdoc
      */
     public static function findIdentityByAccessToken($token, $type = null) {
+        //return static::findOne(['auth_key' => $token, 'status' => self::STATUS_ACTIVE]);
         throw new NotSupportedException('"findIdentityByAccessToken" is not implemented.');
     }
 
@@ -232,6 +234,24 @@ class Person extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface 
      */
     public function removePasswordResetToken() {
         $this->password_reset_token = null;
+    }
+    
+    /**
+     * Approvement for registered user
+     */
+    public function approvement() {
+        if ($this->status === self::STATUS_APPROVE) {
+            $this->status = self::STATUS_ACTIVE;
+        } else {
+            throw new InvalidParamException('Error on change status for this person!!!');
+        }
+    }
+    
+    /**
+     * Get Approve link for send to new user
+     */
+    public function generateApproveEmailToken() {
+        $this->password_reset_token = Yii::$app->security->generateRandomString() . '_' . time();
     }
 
 }
