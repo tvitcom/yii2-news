@@ -3,6 +3,7 @@
 namespace app\controllers;
 
 use Yii;
+use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
@@ -79,18 +80,14 @@ class SiteController extends Controller {
         $model = new SignupForm();
         if ($model->load(Yii::$app->request->post())) {
             if ($user = $model->signup()) {
-                /*
-                if (Yii::$app->getUser()->login($user)) {
-                    return $this->goHome();
-                }*/
-            if ($model->sendApproveEmail($user->id)) {
-                Yii::$app->session->setFlash('success', 'Check your email for '
-                    . 'further instructions.');
-                return $this->render('thanks');
-            } else {
-                Yii::$app->session->setFlash('error', 'Sorry, we are unable to '
-                    . 'reset password for email provided.');
-            }
+                if ($model->sendApproveEmail($user->id)) {
+                    Yii::$app->session->setFlash('success', 'Check your email for '
+                        . 'further instructions.');
+                    return $this->render('thanks');
+                } else {
+                    Yii::$app->session->setFlash('error', 'Sorry, we are unable to '
+                        . 'approve your email - we awfully sorry. Register with another your valid email.');
+                }
             }
         }
 
@@ -207,7 +204,8 @@ class SiteController extends Controller {
      *
      * @return string
      */
-    public function actionContact() {
+    public function actionContact() 
+            {
         $model = new ContactForm();
         if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
             Yii::$app->session->setFlash('contactFormSubmitted');
