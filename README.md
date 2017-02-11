@@ -31,7 +31,7 @@ app/config/db.php
 ```
 php yii migrate
 ```
-* импортируем в БД необходимые данные из папки:
+* импортируем в БД файл news_start_<date and time>.sql из папки:
 ```
 app/data
 ```

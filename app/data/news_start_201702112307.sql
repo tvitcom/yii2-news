@@ -3,12 +3,12 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: localhost
--- Время создания: Фев 08 2017 г., 06:03
--- Версия сервера: 5.5.54-0ubuntu0.14.04.1
--- Версия PHP: 5.5.9-1ubuntu4.20
+-- Время создания: Фев 11 2017 г., 23:07
+-- Версия сервера: 5.5
+-- Версия PHP: 5.5.9
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
+SET time_zone = "+02:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -19,26 +19,6 @@ SET time_zone = "+00:00";
 --
 -- База данных: `news`
 --
-
--- --------------------------------------------------------
-
---
--- Структура таблицы `migration`
---
-
-CREATE TABLE IF NOT EXISTS `migration` (
-  `version` varchar(180) NOT NULL,
-  `apply_time` int(11) DEFAULT NULL,
-  PRIMARY KEY (`version`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Дамп данных таблицы `migration`
---
-
-INSERT INTO `migration` (`version`, `apply_time`) VALUES
-('m000000_000000_base', 1486088696),
-('m130524_201442_init', 1486088702);
 
 -- --------------------------------------------------------
 
@@ -60,18 +40,14 @@ CREATE TABLE IF NOT EXISTS `person` (
   `type_notify` varchar(45) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'all',
   `notify_about` varchar(45) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'newsadded',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
 
 --
 -- Дамп данных таблицы `person`
 --
 
 INSERT INTO `person` (`id`, `username`, `auth_key`, `pass_hash`, `password_reset_token`, `email`, `messenger`, `status`, `created_at`, `updated_at`, `type_notify`, `notify_about`) VALUES
-(1, 'admin', 'auth_adminkey', '$2y$13$ykIpe9SKG.wtJBcHpYXjEOXmvIgBwgUANoPL8do/oM6d3naZPdIn2', NULL, 'admin@adminmail.ruru', NULL, 10, '2000-01-01 00:00:00', '2017-02-06 09:06:50', 'all', 'newsadded'),
-(2, 'user1', 'yo', '$2y$13$BHushAjWzwkNiftnRmFqCu06RUZpXcBmFt/fIVGsW0Lhq9Samz8Ne', NULL, 'user1@mail.ruru', NULL, 10, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 'all', 'newsadded'),
-(3, 'user2', 'CspKPL8bemNQZb1Lnr0TkbAk4VzPCCnY', '$2y$13$U8T24Ph.dLZK.8LxXbrcX.zwdssssDITQYmnDG8wbqE5nI06OUeCG', NULL, 'user2@mail.ruru', NULL, 10, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 'all', 'newsadded'),
-(4, 'user3', 'JotuirLYY0q8j7xn6AaHA9Ppk68Tx8CC', '$2y$13$E5W7Ec4AlUcHkOjcbbMqZ.3Tszki4DmeZEZAZ9hSnBmfQJ0nud7LG', NULL, 'user3@mail.ruru', NULL, 10, '2017-02-04 17:47:56', '2017-02-04 19:50:37', 'all', 'newsadded'),
-(5, 'user4', '$2y$13$oeUl1Rx64cSLq3/J4PRQtexBQ', '$2y$13$VkHgZs4lOiDCusVMwmLv3.M5SBeESm3fAe8fS3VIpq7tmZLHH6ftu', NULL, 'user4@mail.ruru', NULL, 10, '2017-02-04 18:58:07', '2017-02-05 23:01:37', 'all', 'newsadded');
+(1, 'admin', 'auth_adminkey', '$2y$13$ykIpe9SKG.wtJBcHpYXjEOXmvIgBwgUANoPL8do/oM6d3naZPdIn2', NULL, 'admin@adminmail.ruru', NULL, 10, '2000-01-01 00:00:00', '2017-02-06 09:06:50', 'all', 'newsadded');
 
 -- --------------------------------------------------------
 

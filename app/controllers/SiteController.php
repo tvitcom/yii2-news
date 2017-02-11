@@ -86,6 +86,7 @@ class SiteController extends Controller {
                 } else {
                     Yii::$app->session->setFlash('error', 'Sorry, we are unable to '
                         . 'approve your email - we awfully sorry. Register with another your valid email.');
+                    return $this->render('thanks');
                 }
             }
         }
