@@ -83,7 +83,7 @@ class SiteController extends Controller {
                 if (Yii::$app->getUser()->login($user)) {
                     return $this->goHome();
                 }*/
-            if ($model->sendEmail()) {
+            if ($model->sendApproveEmail($user->id)) {
                 Yii::$app->session->setFlash('success', 'Check your email for '
                     . 'further instructions.');
                 return $this->render('thanks');
@@ -149,6 +149,31 @@ class SiteController extends Controller {
      * @throws BadRequestHttpException
      */
     public function actionResetPassword($token) {
+        try {
+            $model = new ResetPasswordForm($token);
+        } catch (InvalidParamException $e) {
+            throw new BadRequestHttpException($e->getMessage());
+        }
+
+        if ($model->load(Yii::$app->request->post()) && $model->validate() && $model->resetPassword()) {
+            Yii::$app->session->setFlash('success', 'New password was saved.');
+
+            return $this->goHome();
+        }
+
+        return $this->render('resetPassword', [
+                'model' => $model,
+        ]);
+    }
+    
+    /**
+     * Resets password.
+     *
+     * @param string $token
+     * @return mixed
+     * @throws BadRequestHttpException
+     */
+    public function actionApprovalEmail($token) {
         try {
             $model = new ResetPasswordForm($token);
         } catch (InvalidParamException $e) {

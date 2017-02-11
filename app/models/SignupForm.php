@@ -82,40 +82,45 @@ class SignupForm extends Model {
     }
     
     /**
-     * Sends an email with a link, for approve the registration.
-     *
+     * Method for create unique link for approval user entered email
+     * @var $user Person
      * @return bool whether the email was send
      */
-    public function sendApproveEmail($approve_token='132token123') {
-        /* @var $user Person */
+    public function sendApproveEmail($id=0) {
         $user = Person::findOne([
-                'status' => Person::STATUS_APPROVE,
-                'email' => $this->email,
+            'id'=>$id,
+            'status' => Person::STATUS_APPROVE,
         ]);
 
         if (!$user) {
             return false;
         }
-
-        if (!Person::isPasswordResetTokenValid($user->password_reset_token)) {
-            $new_token = $user->generatePasswordResetToken();
-            if (!$user->save()) {
-                return false;
-            }
-        }
-
-        return Yii::$app
+        
+        if ($approval_token = $this->createSecretLink($user->auth_key.$user->id)) {
+         return Yii::$app
                 ->mailer
                 ->compose(
                     [
-                    'html' => 'passwordResetToken-html',
-                    'text' => 'passwordResetToken-text',
-                    ], ['user' => $user, 'token' => $new_token]
+                    'html' => 'emailApprovalToken-html',
+                    'text' => 'emailApprovalToken-text',
+                    ], ['user' => $user, 'token' => $approval_token]
                 )
                 ->setFrom([Yii::$app->params['supportEmail'] => Yii::$app->name
                     . ' robot'])
                 ->setTo($this->email)
-                ->setSubject('Password reset for ' . Yii::$app->name)
-                ->send();
+                ->setSubject('E-mail approval for ' . Yii::$app->name)
+                ->send();   
+        }
+    }
+    
+    /**
+     * Create secret link for the user as uniq secrete link
+     */
+    private function createSecretLink($str='') {
+        if (count($str)) {
+            return md5($str);
+        } else {
+            return null;
+        }
     }
 }
