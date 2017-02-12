@@ -71,6 +71,22 @@ class SiteController extends Controller {
     public function actionIndex() {
         return $this->render('index');
     }
+    
+    /**
+     * Displays user room-page.
+     * @var common\models\Person $user 
+     * @return string
+     */
+    public function actionRoom() {
+        $user =  Yii::$app->user->identity;
+        
+        if (Yii::$app->user->isGuest) {
+            return $this->goHome();
+        }
+        return $this->render('room',[
+            'user'=>$user,
+        ]);
+    }
 
     /**
      * Signs user up.
@@ -94,26 +110,6 @@ class SiteController extends Controller {
         }
 
         return $this->render('signup', [
-                'model' => $model,
-        ]);
-    }
-
-    /**
-     * Login action.
-     *
-     * @return string
-     */
-    public function actionLogin() 
-    {  
-        if (!Yii::$app->user->isGuest) {
-            return $this->goHome();
-        }
-
-        $model = new LoginForm();
-        if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->goBack();
-        }
-        return $this->render('login', [
                 'model' => $model,
         ]);
     }
@@ -178,15 +174,35 @@ class SiteController extends Controller {
         $model = new Person;  
         $user = $model->approvement($token);
         if (($user = $model->approvement($token)) 
-                && (Yii::$app->getUser()->login($user))) {
+                /*&& (Yii::$app->getUser()->login($user))*/) {
             \Yii::$app->session->setFlash('success', 'New user now is registered.');
             return $this->render('room',['user'=>$user]);
         } else {
             \Yii::$app->session->setFlash('alert', 'Bad link - registration unaviable!');
-            return $this->redirect(['site/login']);
+            return $this->render('thanks');//$this->redirect(['site/login']);
         }
 
         
+    }
+    
+    /**
+     * Login action.
+     *
+     * @return string
+     */
+    public function actionLogin() 
+    {  
+        if (!Yii::$app->user->isGuest) {
+            return $this->goHome();
+        }
+
+        $model = new LoginForm();
+        if ($model->load(Yii::$app->request->post()) && $model->login()) {
+            return $this->redirect(['/site/room']);
+        }
+        return $this->render('login', [
+                'model' => $model,
+        ]);
     }
 
     /**

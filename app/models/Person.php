@@ -8,6 +8,7 @@ use yii\behaviors\TimestampBehavior;
 use yii\db\ActiveRecord;
 use yii\db\Expression;
 use yii\web\IdentityInterface;
+use yii\base\InvalidParamException;
 
 /**
  * This is the model class for table "person".
@@ -243,9 +244,20 @@ class Person extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface 
      * -return as result the user object
      * @param string $token
      * @return object $user - user object
-     * return obj
      */
     public static function approvement($token) {
-        $user = static::findOne(['auth_key' => $token, 'status' => self::STATUS_APPROVE]);
+        if ($user = static::findOne([
+                    'auth_key' => $token, 
+                    'status' => self::STATUS_APPROVE
+                ])) {
+            $user->status = Person::STATUS_ACTIVE;
+            //$user->generateAuthKey();
+            if ($user->save()) {
+                return $user;
+            } else {
+                throw new InvalidParamException('Error save approval user');
+            }
+        }
+        return null;
     }
 }

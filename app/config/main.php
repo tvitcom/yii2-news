@@ -5,6 +5,7 @@ $params = require(__DIR__ . '/params.php');
 $config = [
     'id' => 'basic',
     'name' => 'Yii2-news',
+    'defaultRoute' => 'site/index',
     'language' => 'ru-RU', // set target language to be Russian
     'sourceLanguage' => 'en-US', // set source language to be English
     'basePath' => dirname(__DIR__),
@@ -50,6 +51,11 @@ $config = [
             ],
         ],
         'db' => require(__DIR__ . '/db.php'),
+        'session' => [
+            'class' => 'yii\web\DbSession',
+            'db' => 'db',
+            'sessionTable' => 'session',
+        ],
         'i18n' => [
             'translations' => [
                 'app*' => [
@@ -58,7 +64,7 @@ $config = [
                     'sourceLanguage' => 'en-US',
                     'fileMap' => [
                         'app' => 'app.php',
-                        //'app/error' => 'error.php',
+                        'error' => 'error.php',
                     ],
                 ],
             ],

@@ -19,7 +19,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <?php } ?>
 
 <div class="site-login">
-    <h1><?= yii\helpers\Html::encode($this->title) ?> or <?= yii\helpers\Html::a('signup', ['/site/register']) ?></h1>
+    <h1><?= yii\helpers\Html::encode($this->title) ?> or <?= yii\helpers\Html::a('register', ['/site/register']) ?></h1>
     <p>Please fill out the follow fields:</p>
 
     <?php

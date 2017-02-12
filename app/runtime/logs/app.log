@@ -10074,3 +10074,867 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1486898375.249
     'REQUEST_TIME' => 1486898375
 ]
+2017-02-12 14:09:52 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Creating default object from empty value' in /srv/Sites/news/app/models/Person.php:250
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionApprovalEmail()
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array()
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#6 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#7 {main}
+2017-02-12 14:09:52 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/approval-email'
+    'token' => 'MaF548_kPwQZowJSoX6j-5PbcNg1o4Z'
+]
+
+$_COOKIE = [
+    '_csrf' => '965f2e745da0ae0cea0a7ecb5dcd50cb9f0aa39127a3ace2454949dfd20fd806a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"l0lVsLQYQNn9k80BnfLqd307y3fEaA0i\";}'
+    'PHPSESSID' => 'rak1j15kmic47njbhu3b3hlgb7'
+    'SESSID' => 'f9vk4cqnsqkvq3t3mve5qn7jv1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=965f2e745da0ae0cea0a7ecb5dcd50cb9f0aa39127a3ace2454949dfd20fd806a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22l0lVsLQYQNn9k80BnfLqd307y3fEaA0i%22%3B%7D; PHPSESSID=rak1j15kmic47njbhu3b3hlgb7; SESSID=f9vk4cqnsqkvq3t3mve5qn7jv1'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '44110'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fapproval-email&token=MaF548_kPwQZowJSoX6j-5PbcNg1o4Z'
+    'REQUEST_URI' => '/index.php?r=site%2Fapproval-email&token=MaF548_kPwQZowJSoX6j-5PbcNg1o4Z'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486901392.809
+    'REQUEST_TIME' => 1486901392
+]
+2017-02-12 14:12:09 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\models\InvalidParamException' not found' in /srv/Sites/news/app/models/Person.php:259
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionApprovalEmail()
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array()
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#6 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#7 {main}
+2017-02-12 14:12:09 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/approval-email'
+    'token' => 'MaF548_kPwQZowJSoX6j-5PbcNg1o4Z'
+]
+
+$_COOKIE = [
+    '_csrf' => '965f2e745da0ae0cea0a7ecb5dcd50cb9f0aa39127a3ace2454949dfd20fd806a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"l0lVsLQYQNn9k80BnfLqd307y3fEaA0i\";}'
+    'PHPSESSID' => 'rak1j15kmic47njbhu3b3hlgb7'
+    'SESSID' => 'f9vk4cqnsqkvq3t3mve5qn7jv1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=965f2e745da0ae0cea0a7ecb5dcd50cb9f0aa39127a3ace2454949dfd20fd806a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22l0lVsLQYQNn9k80BnfLqd307y3fEaA0i%22%3B%7D; PHPSESSID=rak1j15kmic47njbhu3b3hlgb7; SESSID=f9vk4cqnsqkvq3t3mve5qn7jv1'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '44114'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fapproval-email&token=MaF548_kPwQZowJSoX6j-5PbcNg1o4Z'
+    'REQUEST_URI' => '/index.php?r=site%2Fapproval-email&token=MaF548_kPwQZowJSoX6j-5PbcNg1o4Z'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486901529.044
+    'REQUEST_TIME' => 1486901529
+]
+2017-02-12 14:12:44 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /srv/Sites/news/app/models/Person.php:261
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionApprovalEmail()
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array()
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#6 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#7 {main}
+2017-02-12 14:12:44 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/approval-email'
+    'token' => 'MaF548_kPwQZowJSoX6j-5PbcNg1o4Z'
+]
+
+$_COOKIE = [
+    '_csrf' => '965f2e745da0ae0cea0a7ecb5dcd50cb9f0aa39127a3ace2454949dfd20fd806a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"l0lVsLQYQNn9k80BnfLqd307y3fEaA0i\";}'
+    'PHPSESSID' => 'rak1j15kmic47njbhu3b3hlgb7'
+    'SESSID' => 'f9vk4cqnsqkvq3t3mve5qn7jv1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=965f2e745da0ae0cea0a7ecb5dcd50cb9f0aa39127a3ace2454949dfd20fd806a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22l0lVsLQYQNn9k80BnfLqd307y3fEaA0i%22%3B%7D; PHPSESSID=rak1j15kmic47njbhu3b3hlgb7; SESSID=f9vk4cqnsqkvq3t3mve5qn7jv1'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '44116'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fapproval-email&token=MaF548_kPwQZowJSoX6j-5PbcNg1o4Z'
+    'REQUEST_URI' => '/index.php?r=site%2Fapproval-email&token=MaF548_kPwQZowJSoX6j-5PbcNg1o4Z'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486901564.325
+    'REQUEST_TIME' => 1486901564
+]
+2017-02-12 14:14:56 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Error approval process' in /srv/Sites/news/app/models/Person.php:260
+Stack trace:
+#0 /srv/Sites/news/app/controllers/SiteController.php(180): app\models\Person::approvement('MaF548_kPwQZowJ...')
+#1 [internal function]: app\controllers\SiteController->actionApprovalEmail('MaF548_kPwQZowJ...')
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('approval-email', Array)
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/approval-e...', Array)
+#6 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#8 {main}
+2017-02-12 14:14:55 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/approval-email'
+    'token' => 'MaF548_kPwQZowJSoX6j-5PbcNg1o4Z4'
+]
+
+$_COOKIE = [
+    '_csrf' => '965f2e745da0ae0cea0a7ecb5dcd50cb9f0aa39127a3ace2454949dfd20fd806a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"l0lVsLQYQNn9k80BnfLqd307y3fEaA0i\";}'
+    'PHPSESSID' => 'rak1j15kmic47njbhu3b3hlgb7'
+    'SESSID' => 'f9vk4cqnsqkvq3t3mve5qn7jv1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=965f2e745da0ae0cea0a7ecb5dcd50cb9f0aa39127a3ace2454949dfd20fd806a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22l0lVsLQYQNn9k80BnfLqd307y3fEaA0i%22%3B%7D; PHPSESSID=rak1j15kmic47njbhu3b3hlgb7; SESSID=f9vk4cqnsqkvq3t3mve5qn7jv1'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '44132'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fapproval-email&token=MaF548_kPwQZowJSoX6j-5PbcNg1o4Z4'
+    'REQUEST_URI' => '/index.php?r=site%2Fapproval-email&token=MaF548_kPwQZowJSoX6j-5PbcNg1o4Z4'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486901695.945
+    'REQUEST_TIME' => 1486901695
+]
+2017-02-12 14:20:20 [127.0.0.1][-][f9vk4cqnsqkvq3t3mve5qn7jv1][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/approval-emai' in /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php:127
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('approval-emai', Array)
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/approval-e...', Array)
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#2 {main}
+2017-02-12 14:20:20 [127.0.0.1][-][f9vk4cqnsqkvq3t3mve5qn7jv1][info][application] $_GET = [
+    'r' => 'site/approval-emai'
+]
+
+$_COOKIE = [
+    '_csrf' => '965f2e745da0ae0cea0a7ecb5dcd50cb9f0aa39127a3ace2454949dfd20fd806a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"l0lVsLQYQNn9k80BnfLqd307y3fEaA0i\";}'
+    'PHPSESSID' => 'rak1j15kmic47njbhu3b3hlgb7'
+    'SESSID' => 'f9vk4cqnsqkvq3t3mve5qn7jv1'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'warning' => -1
+    ]
+    '__captcha/site/captcha' => 'rhgodom'
+    '__captcha/site/captchacount' => 1
+    'warning' => 'Bad link - registration unaviable!'
+    '__id' => '11'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=965f2e745da0ae0cea0a7ecb5dcd50cb9f0aa39127a3ace2454949dfd20fd806a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22l0lVsLQYQNn9k80BnfLqd307y3fEaA0i%22%3B%7D; PHPSESSID=rak1j15kmic47njbhu3b3hlgb7; SESSID=f9vk4cqnsqkvq3t3mve5qn7jv1'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '44202'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fapproval-emai'
+    'REQUEST_URI' => '/index.php?r=site%2Fapproval-emai'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486902020.691
+    'REQUEST_TIME' => 1486902020
+]
+2017-02-12 14:22:58 [127.0.0.1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Error approval process' in /srv/Sites/news/app/models/Person.php:262
+Stack trace:
+#0 /srv/Sites/news/app/controllers/SiteController.php(179): app\models\Person::approvement('MZ0kv2eBj3N_UfQ...')
+#1 [internal function]: app\controllers\SiteController->actionApprovalEmail('MZ0kv2eBj3N_UfQ...')
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('approval-email', Array)
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/approval-e...', Array)
+#6 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#8 {main}
+2017-02-12 14:22:58 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/approval-email'
+    'token' => 'MZ0kv2eBj3N_UfQ-dD3fZpL_vT-9Ah_'
+]
+
+$_COOKIE = [
+    '_csrf' => '965f2e745da0ae0cea0a7ecb5dcd50cb9f0aa39127a3ace2454949dfd20fd806a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"l0lVsLQYQNn9k80BnfLqd307y3fEaA0i\";}'
+    'PHPSESSID' => 'rak1j15kmic47njbhu3b3hlgb7'
+    'SESSID' => 'f9vk4cqnsqkvq3t3mve5qn7jv1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=965f2e745da0ae0cea0a7ecb5dcd50cb9f0aa39127a3ace2454949dfd20fd806a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22l0lVsLQYQNn9k80BnfLqd307y3fEaA0i%22%3B%7D; PHPSESSID=rak1j15kmic47njbhu3b3hlgb7; SESSID=f9vk4cqnsqkvq3t3mve5qn7jv1'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '44238'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fapproval-email&token=MZ0kv2eBj3N_UfQ-dD3fZpL_vT-9Ah_'
+    'REQUEST_URI' => '/index.php?r=site%2Fapproval-email&token=MZ0kv2eBj3N_UfQ-dD3fZpL_vT-9Ah_'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486902178.272
+    'REQUEST_TIME' => 1486902178
+]
+2017-02-12 14:35:00 [127.0.0.1][-][f9vk4cqnsqkvq3t3mve5qn7jv1][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: name' in /srv/Sites/news/app/themes/basic/site/error.php:10
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile()
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render()
+#3 /srv/Sites/news/app/controllers/SiteController.php(186): yii\base\Controller->render()
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionApprovalEmail()
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array()
+#6 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#8 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#9 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#10 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-02-12 14:35:00 [127.0.0.1][-][f9vk4cqnsqkvq3t3mve5qn7jv1][info][application] $_GET = [
+    'r' => 'site/approval-email'
+    'token' => 'MZ0kv2eBj3N_UfQ-dD3fZpL_vT-9Ah_O'
+]
+
+$_COOKIE = [
+    '_csrf' => '965f2e745da0ae0cea0a7ecb5dcd50cb9f0aa39127a3ace2454949dfd20fd806a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"l0lVsLQYQNn9k80BnfLqd307y3fEaA0i\";}'
+    'PHPSESSID' => 'rak1j15kmic47njbhu3b3hlgb7'
+    'SESSID' => 'f9vk4cqnsqkvq3t3mve5qn7jv1'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'warning' => -1
+        'alert' => -1
+    ]
+    '__captcha/site/captcha' => 'teyike'
+    '__captcha/site/captchacount' => 1
+    'warning' => 'Bad link - registration unaviable!'
+    '__id' => '11'
+    'alert' => 'Bad link - registration unaviable!'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=965f2e745da0ae0cea0a7ecb5dcd50cb9f0aa39127a3ace2454949dfd20fd806a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22l0lVsLQYQNn9k80BnfLqd307y3fEaA0i%22%3B%7D; PHPSESSID=rak1j15kmic47njbhu3b3hlgb7; SESSID=f9vk4cqnsqkvq3t3mve5qn7jv1'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '44356'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fapproval-email&token=MZ0kv2eBj3N_UfQ-dD3fZpL_vT-9Ah_O'
+    'REQUEST_URI' => '/index.php?r=site%2Fapproval-email&token=MZ0kv2eBj3N_UfQ-dD3fZpL_vT-9Ah_O'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486902900.08
+    'REQUEST_TIME' => 1486902900
+]
+2017-02-12 15:02:45 [127.0.0.1][-][f9vk4cqnsqkvq3t3mve5qn7jv1][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'news.person' doesn't exist' in /srv/Sites/news/app/vendor/yiisoft/yii2/db/Command.php:902
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/db/Command.php(902): PDOStatement->execute()
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/db/Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/db/Query.php(253): yii\db\Command->queryOne()
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/db/ActiveQuery.php(295): yii\db\Query->one('<span class="ke...')
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/db/BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#5 /srv/Sites/news/app/models/Person.php(111): yii\db\BaseActiveRecord::findOne('[<span class="s...')
+#6 /srv/Sites/news/app/vendor/yiisoft/yii2/web/User.php(657): app\models\Person::findIdentity('<span class="st...')
+#7 /srv/Sites/news/app/vendor/yiisoft/yii2/web/User.php(188): yii\web\User->renewAuthStatus()
+#8 /srv/Sites/news/app/vendor/yiisoft/yii2/web/User.php(333): yii\web\User->getIdentity()
+#9 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Component.php(132): yii\web\User->getIsGuest()
+#10 /srv/Sites/news/app/controllers/SiteController.php(108): yii\base\Component->__get('<span class="st...')
+#11 [internal function]: app\controllers\SiteController->actionLogin()
+#12 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#13 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#14 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#15 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#16 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#18 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'news.person' doesn't exist
+The SQL being executed was: SELECT * FROM `person` WHERE (`id`='11') AND (`status`=10)' in /srv/Sites/news/app/vendor/yiisoft/yii2/db/Schema.php:636
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/db/Command.php(917): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/db/Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/db/Query.php(253): yii\db\Command->queryOne()
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/db/ActiveQuery.php(295): yii\db\Query->one('<span class="ke...')
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/db/BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#5 /srv/Sites/news/app/models/Person.php(111): yii\db\BaseActiveRecord::findOne('[<span class="s...')
+#6 /srv/Sites/news/app/vendor/yiisoft/yii2/web/User.php(657): app\models\Person::findIdentity('<span class="st...')
+#7 /srv/Sites/news/app/vendor/yiisoft/yii2/web/User.php(188): yii\web\User->renewAuthStatus()
+#8 /srv/Sites/news/app/vendor/yiisoft/yii2/web/User.php(333): yii\web\User->getIdentity()
+#9 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Component.php(132): yii\web\User->getIsGuest()
+#10 /srv/Sites/news/app/controllers/SiteController.php(108): yii\base\Component->__get('<span class="st...')
+#11 [internal function]: app\controllers\SiteController->actionLogin()
+#12 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array('[<span class="t...', '[]')
+#13 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams('[<span class="s...')
+#14 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#15 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#16 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#18 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'news.person' doesn't exist
+)
+
+2017-02-12 15:02:45 [127.0.0.1][-][f9vk4cqnsqkvq3t3mve5qn7jv1][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_COOKIE = [
+    '_csrf' => '965f2e745da0ae0cea0a7ecb5dcd50cb9f0aa39127a3ace2454949dfd20fd806a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"l0lVsLQYQNn9k80BnfLqd307y3fEaA0i\";}'
+    'PHPSESSID' => 'rak1j15kmic47njbhu3b3hlgb7'
+    'SESSID' => 'f9vk4cqnsqkvq3t3mve5qn7jv1'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'warning' => -1
+        'alert' => -1
+    ]
+    '__captcha/site/captcha' => 'teyike'
+    '__captcha/site/captchacount' => 1
+    'warning' => 'Bad link - registration unaviable!'
+    '__id' => '11'
+    'alert' => 'Bad link - registration unaviable!'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://news/index.php?r=site%2Fregister'
+    'HTTP_COOKIE' => '_csrf=965f2e745da0ae0cea0a7ecb5dcd50cb9f0aa39127a3ace2454949dfd20fd806a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22l0lVsLQYQNn9k80BnfLqd307y3fEaA0i%22%3B%7D; PHPSESSID=rak1j15kmic47njbhu3b3hlgb7; SESSID=f9vk4cqnsqkvq3t3mve5qn7jv1'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '44610'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486904565.084
+    'REQUEST_TIME' => 1486904565
+]
+2017-02-12 15:20:32 [127.0.0.1][1][80o6h9u1mnhv86usd74ku7bo43][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: user' in /srv/Sites/news/app/controllers/SiteController.php:115
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array()
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#5 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#6 {main}
+2017-02-12 15:20:31 [127.0.0.1][1][80o6h9u1mnhv86usd74ku7bo43][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf' => 'MTFfZ29sYXcAZi0QBwEPG3dnaCEaOysWd34JVR8WJy10WTALCiYXGA=='
+    'LoginForm' => [
+        'username' => 'admin'
+        'password' => 'pass_to_news'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'SESSID' => 'o1obcgtmphl5ruo1fq8gqmo5f1'
+    '_csrf' => '3bfc66652139f3fc92a98171598dcbfdbea7efca226816c00e24c15620a5900ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1WrwhmnlFV7FuWJaFOV2pzFZEholeJvo\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://news/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => 'SESSID=o1obcgtmphl5ruo1fq8gqmo5f1; _csrf=3bfc66652139f3fc92a98171598dcbfdbea7efca226816c00e24c15620a5900ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221WrwhmnlFV7FuWJaFOV2pzFZEholeJvo%22%3B%7D'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '203'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '44710'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486905631.346
+    'REQUEST_TIME' => 1486905631
+]
+2017-02-12 15:21:25 [127.0.0.1][1][6ghj8kp1geppfuoqv5pg65em21][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /srv/Sites/news/app/themes/basic/site/room.php:8
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile()
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render()
+#3 /srv/Sites/news/app/controllers/SiteController.php(116): yii\base\Controller->render()
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionLogin()
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array()
+#6 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#8 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#9 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#10 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-02-12 15:21:24 [127.0.0.1][1][6ghj8kp1geppfuoqv5pg65em21][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf' => 'b05EckJ2T2ZeGTYFKhshCikYczQ3IQUHKQESQDIMCTwqJiseJzw5CQ=='
+    'LoginForm' => [
+        'username' => 'admin'
+        'password' => 'pass_to_news'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'SESSID' => 'ksb2piq89so8e01mieqst68tf6'
+    '_csrf' => '3bfc66652139f3fc92a98171598dcbfdbea7efca226816c00e24c15620a5900ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1WrwhmnlFV7FuWJaFOV2pzFZEholeJvo\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://news/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => 'SESSID=ksb2piq89so8e01mieqst68tf6; _csrf=3bfc66652139f3fc92a98171598dcbfdbea7efca226816c00e24c15620a5900ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221WrwhmnlFV7FuWJaFOV2pzFZEholeJvo%22%3B%7D'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '203'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '44716'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486905684.077
+    'REQUEST_TIME' => 1486905684
+]
+2017-02-12 15:24:56 [127.0.0.1][1][5jvn9hbf2m3em8m6knep5f7dn3][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /srv/Sites/news/app/themes/basic/site/room.php:8
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile()
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render()
+#3 /srv/Sites/news/app/controllers/SiteController.php(116): yii\base\Controller->render()
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionLogin()
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array()
+#6 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#8 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#9 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#10 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#11 {main}
+2017-02-12 15:24:55 [127.0.0.1][1][5jvn9hbf2m3em8m6knep5f7dn3][info][application] $_GET = [
+    'r' => 'site/login'
+]
+
+$_POST = [
+    '_csrf' => 'Sy5CaXkxdkl6eTAeEVwYJQ14dS8MZjwoDWEUWwlLMBMORi0FHHsAJg=='
+    'LoginForm' => [
+        'username' => 'admin'
+        'password' => 'pass_to_news'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    'SESSID' => 'i6dh0ktt0mg82ujfeum5lbeho5'
+    '_csrf' => '3bfc66652139f3fc92a98171598dcbfdbea7efca226816c00e24c15620a5900ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1WrwhmnlFV7FuWJaFOV2pzFZEholeJvo\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://news/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => 'SESSID=i6dh0ktt0mg82ujfeum5lbeho5; _csrf=3bfc66652139f3fc92a98171598dcbfdbea7efca226816c00e24c15620a5900ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221WrwhmnlFV7FuWJaFOV2pzFZEholeJvo%22%3B%7D'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '203'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '44728'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Flogin'
+    'REQUEST_URI' => '/index.php?r=site%2Flogin'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486905895.56
+    'REQUEST_TIME' => 1486905895
+]
+2017-02-12 15:38:11 [127.0.0.1][1][t6b53r5934lkmiue6eb7pefo05][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: model' in /srv/Sites/news/app/controllers/SiteController.php:85
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array()
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#5 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#6 {main}
+2017-02-12 15:38:11 [127.0.0.1][1][t6b53r5934lkmiue6eb7pefo05][info][application] $_GET = [
+    'r' => 'site/room'
+]
+
+$_COOKIE = [
+    'SESSID' => 't6b53r5934lkmiue6eb7pefo05'
+    '_csrf' => '3bfc66652139f3fc92a98171598dcbfdbea7efca226816c00e24c15620a5900ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"1WrwhmnlFV7FuWJaFOV2pzFZEholeJvo\";}'
+    '_identity' => 'b9870ae8a1e4b84469d7cc701870c8acf750883c8c188480e25312d04319d284a:2:{i:0;s:9:\"_identity\";i:1;s:29:\"[\"1\",\"auth_adminkey\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://news/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => 'SESSID=t6b53r5934lkmiue6eb7pefo05; _csrf=3bfc66652139f3fc92a98171598dcbfdbea7efca226816c00e24c15620a5900ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%221WrwhmnlFV7FuWJaFOV2pzFZEholeJvo%22%3B%7D; _identity=b9870ae8a1e4b84469d7cc701870c8acf750883c8c188480e25312d04319d284a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A29%3A%22%5B%221%22%2C%22auth_adminkey%22%2C2592000%5D%22%3B%7D'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '44818'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Froom'
+    'REQUEST_URI' => '/index.php?r=site%2Froom'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486906691.933
+    'REQUEST_TIME' => 1486906691
+]
+2017-02-12 16:36:50 [127.0.0.1][1][8ca6bhmrbltuebldh82nepdq47][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: user' in /srv/Sites/news/app/controllers/SiteController.php:85
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array()
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#5 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#6 {main}
+2017-02-12 16:36:50 [127.0.0.1][1][8ca6bhmrbltuebldh82nepdq47][info][application] $_GET = [
+    'r' => 'site/room'
+]
+
+$_COOKIE = [
+    'SESSID' => '8ca6bhmrbltuebldh82nepdq47'
+    '_csrf' => '711e957c4022b919ed5fdfedae82f3e7358e854d1515f33f2807a73dbea94289a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"M7-V4LA9iDNeI1ObL9auLn2Njfo7htAL\";}'
+    '_identity' => 'b9870ae8a1e4b84469d7cc701870c8acf750883c8c188480e25312d04319d284a:2:{i:0;s:9:\"_identity\";i:1;s:29:\"[\"1\",\"auth_adminkey\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 'zasebd'
+    '__captcha/site/captchacount' => 1
+    '__id' => '1'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://news/index.php?r=site%2Flogin'
+    'HTTP_COOKIE' => 'SESSID=8ca6bhmrbltuebldh82nepdq47; _csrf=711e957c4022b919ed5fdfedae82f3e7358e854d1515f33f2807a73dbea94289a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22M7-V4LA9iDNeI1ObL9auLn2Njfo7htAL%22%3B%7D; _identity=b9870ae8a1e4b84469d7cc701870c8acf750883c8c188480e25312d04319d284a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A29%3A%22%5B%221%22%2C%22auth_adminkey%22%2C2592000%5D%22%3B%7D'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '45396'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Froom'
+    'REQUEST_URI' => '/index.php?r=site%2Froom'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486910210.117
+    'REQUEST_TIME' => 1486910210
+]
