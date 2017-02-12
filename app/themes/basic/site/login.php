@@ -13,8 +13,8 @@ $this->params['breadcrumbs'][] = $this->title;
 
 <?php if (Yii::$app->session->hasFlash('alert')) { ?>
 <?= Alert::widget([
-   'options' => ['class' => 'alert-info'],
-   'body' => Yii::$app->session->getFlash('success'),
+   'options' => ['class' => 'alert alert-danger'],
+   'body' => Yii::$app->session->getFlash('alert'),
 ]);?>
 <?php } ?>
 

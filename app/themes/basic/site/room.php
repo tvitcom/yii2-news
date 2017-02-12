@@ -5,7 +5,7 @@
 use yii\helpers\Html;
 use yii\bootstrap\Alert;
 
-$this->title = $user->username . '- Your personal room!';
+$this->title = $user->username . ' - Your personal room!';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 

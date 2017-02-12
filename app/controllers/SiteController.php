@@ -176,13 +176,13 @@ class SiteController extends Controller {
      */
     public function actionApprovalEmail($token) {
         $model = new Person;  
-        
-        if ($user = $model->approvement($token) 
+        $user = $model->approvement($token);
+        if (($user = $model->approvement($token)) 
                 && (Yii::$app->getUser()->login($user))) {
             \Yii::$app->session->setFlash('success', 'New user now is registered.');
-            return $this->render('room');
+            return $this->render('room',['user'=>$user]);
         } else {
-            \Yii::$app->session->setFlash('warning', 'Bad link - registration unaviable!');
+            \Yii::$app->session->setFlash('alert', 'Bad link - registration unaviable!');
             return $this->redirect(['site/login']);
         }
 

@@ -237,9 +237,15 @@ class Person extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface 
     }
     
     /**
-     * Approvement for registered user
+     * The proccess approvement for registered user:
+     * -find user by token
+     * -fix his status and rewrite auth_key
+     * -return as result the user object
+     * @param string $token
+     * @return object $user - user object
+     * return obj
      */
     public static function approvement($token) {
-        return static::findOne(['auth_key' => $token, 'status' => self::STATUS_APPROVE]);
+        $user = static::findOne(['auth_key' => $token, 'status' => self::STATUS_APPROVE]);
     }
 }

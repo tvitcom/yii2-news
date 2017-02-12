@@ -2,17 +2,17 @@
 /* @var $this yii\web\View */
 
 use yii\helpers\Html;
+use yii\bootstrap\Alert;
 
 $this->title = 'Thanks!';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 
 <?php if (Yii::$app->session->hasFlash('success')) { ?>
-  <div class="alert alert-success alert-dismissable">
-  <button aria-hidden="true" data-dismiss="alert" class="close" type="button">X</button>
-  <h4><i class="icon fa fa-check"></i><?= Yii::t('app','Success!');?></h4>
-  <?= Yii::$app->session->getFlash('success') ?>
-  </div>
+<?= Alert::widget([
+   'options' => ['class' => 'alert-info'],
+   'body' => Yii::$app->session->getFlash('success'),
+]);?>
 <?php } ?>
 
 <div class="site-about">
