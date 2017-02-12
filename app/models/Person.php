@@ -26,7 +26,7 @@ use yii\base\InvalidParamException;
  * @property string $type_notify
  * @property string $notify_about
  *
- * @property Posts[] $posts
+ * @property Post[] $post
  */
 class Person extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface {
 
@@ -79,8 +79,8 @@ class Person extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface 
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getPosts() {
-        return $this->hasMany(Posts::className(), ['author_id' => 'id']);
+    public function getPost() {
+        return $this->hasMany(Post::className(), ['author_id' => 'id']);
     }
 
     /* -------- PART FOR AUTHENTICATION USER IN APPLICATION ---- */

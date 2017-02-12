@@ -1,6 +1,8 @@
 -- phpMyAdmin SQL Dump
+-- http://www.phpmyadmin.net
+--
 -- Хост: localhost
--- Время создания: Фев 12 2017 г., 15:03
+-- Время создания: Фев 12 2017 г., 16:48
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -47,10 +49,10 @@ INSERT INTO `person` (`id`, `username`, `auth_key`, `pass_hash`, `password_reset
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `posts`
+-- Структура таблицы `post`
 --
 
-CREATE TABLE IF NOT EXISTS `posts` (
+CREATE TABLE IF NOT EXISTS `post` (
   `id` bigint(21) unsigned NOT NULL AUTO_INCREMENT,
   `author_id` bigint(21) unsigned DEFAULT NULL,
   `title` varchar(128) NOT NULL,
@@ -64,14 +66,27 @@ CREATE TABLE IF NOT EXISTS `posts` (
   KEY `fk_posts_person_idx` (`author_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='for news entries' AUTO_INCREMENT=1 ;
 
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `session`
+--
+
+CREATE TABLE IF NOT EXISTS `session` (
+  `id` char(64) NOT NULL,
+  `expire` int(11) DEFAULT NULL,
+  `data` longblob,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 --
 -- Ограничения внешнего ключа сохраненных таблиц
 --
 
 --
--- Ограничения внешнего ключа таблицы `posts`
+-- Ограничения внешнего ключа таблицы `post`
 --
-ALTER TABLE `posts`
+ALTER TABLE `post`
   ADD CONSTRAINT `fk_posts_person` FOREIGN KEY (`author_id`) REFERENCES `person` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
