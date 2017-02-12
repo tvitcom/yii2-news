@@ -251,7 +251,7 @@ class Person extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface 
                     'status' => self::STATUS_APPROVE
                 ])) {
             $user->status = Person::STATUS_ACTIVE;
-            //$user->generateAuthKey();
+            $user->generateAuthKey();
             if ($user->save()) {
                 return $user;
             } else {

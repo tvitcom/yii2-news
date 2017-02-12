@@ -1,0 +1,55 @@
+Message-ID: <84ebecb65d6fa33378b587a1e14fbab7@news>
+Date: Sun, 12 Feb 2017 17:28:05 +0200
+Subject: Password reset for Yii2-news
+From: Yii2-news robot <support@mysite.local>
+To: user2@mail.ruru
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_v4_1486913285_7787c1ad7000fc5bc556070c32868612_=_"
+
+
+--_=_swift_v4_1486913285_7787c1ad7000fc5bc556070c32868612_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+Hello user2,
+
+Follow the link below to reset your password:
+
+htt=
+p://news/index.php?r=3Dsite%2Freset-password&token=3DNevKMkMQij-pmu4vH5FweA=
+CmTAlqYmce_1486913285
+
+--_=_swift_v4_1486913285_7787c1ad7000fc5bc556070c32868612_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns=3D"http://www.w3.org/1999/=
+xhtml">
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/ht=
+ml; charset=3DUTF-8" />
+    <title></title>
+    </head>
+<body>
+    =
+    <div class=3D"password-reset">
+    <p>Hello user2,</p>
+
+    <p>Fo=
+llow the link below to reset your password:</p>
+
+    <p><a href=3D"http=
+://news/index.php?r=3Dsite%2Freset-password&amp;token=3DNevKMkMQij-pmu4vH5F=
+weACmTAlqYmce_1486913285">http://news/index.php?r=3Dsite%2Freset-password&a=
+mp;token=3DNevKMkMQij-pmu4vH5FweACmTAlqYmce_1486913285</a></p>
+</div>
+ =
+   </body>
+</html>
+
+
+--_=_swift_v4_1486913285_7787c1ad7000fc5bc556070c32868612_=_--

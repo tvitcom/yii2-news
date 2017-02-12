@@ -10,8 +10,13 @@ $this->params['breadcrumbs'][] = $this->title;
 
 <?php if (Yii::$app->session->hasFlash('success')) { ?>
 <?= Alert::widget([
-   'options' => ['class' => 'alert-info'],
+   'options' => ['class' => 'alert-success'],
    'body' => Yii::$app->session->getFlash('success'),
+]);?>
+<?php } elseif (Yii::$app->session->hasFlash('alert')) { ?>
+<?= Alert::widget([
+   'options' => ['class' => 'alert-danger'],
+   'body' => Yii::$app->session->getFlash('alert'),
 ]);?>
 <?php } ?>
 
@@ -19,5 +24,5 @@ $this->params['breadcrumbs'][] = $this->title;
     
     <h1><?php echo Html::encode($this->title); ?></h1>
     
-    <p>Thank you for you request. You can read their emails and follow our further instructions.</p>
+    <p>Thank you for you request.</p>
 </div>

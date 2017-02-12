@@ -4,6 +4,7 @@
 /* @var $model \frontend\models\ResetPasswordForm */
 
 use yii\helpers\Html;
+use yii\bootstrap\Alert;
 use yii\bootstrap\ActiveForm;
 
 $this->title = 'Reset password';
@@ -12,7 +13,10 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="site-reset-password">
 <h1><?php 
 if (\Yii::$app->session->hasFlash('success'))
-    echo \Yii::$app->session->getFlash('success');
+    echo Alert::widget([
+       'options' => ['class' => 'alert-success'],
+       'body' => Yii::$app->session->getFlash('success'),
+    ]);
 else
     echo Html::encode($this->title);
 ?></h1>

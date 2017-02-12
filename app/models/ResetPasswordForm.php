@@ -32,7 +32,7 @@ class ResetPasswordForm extends Model {
         }
         $this->_user = Person::findByPasswordResetToken($token);
         if (!$this->_user) {
-            throw new InvalidParamException('Wrong password reset token.');
+            throw new InvalidParamException('Wrong password recovery token.');
         }
         parent::__construct($config);
     }
