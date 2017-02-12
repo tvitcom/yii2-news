@@ -9427,3 +9427,280 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1486852114.561
     'REQUEST_TIME' => 1486852114
 ]
+2017-02-12 01:57:06 [127.0.0.1][-][rak1j15kmic47njbhu3b3hlgb7][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in /srv/Sites/news/app/models/SignupForm.php:124
+Stack trace:
+#0 /srv/Sites/news/app/controllers/SiteController.php(83): app\models\SignupForm->sendApproveEmail()
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionRegister()
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array()
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#6 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#7 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#8 {main}
+2017-02-12 01:57:05 [127.0.0.1][-][rak1j15kmic47njbhu3b3hlgb7][info][application] $_GET = [
+    'r' => 'site/register'
+]
+
+$_POST = [
+    '_csrf' => 'VHBpS200a1Q4QAUdHng6DQU.B3IGDFsWOhYlOgkHW2MtQw8ODHVbPQ=='
+    'SignupForm' => [
+        'username' => 'user1'
+        'email' => 'user1@mail.ruru'
+        'password' => 'pass_to_news'
+        'password_repeat' => 'pass_to_news'
+        'verifyCode' => 'sgnukuh'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => '965f2e745da0ae0cea0a7ecb5dcd50cb9f0aa39127a3ace2454949dfd20fd806a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"l0lVsLQYQNn9k80BnfLqd307y3fEaA0i\";}'
+    'PHPSESSID' => 'rak1j15kmic47njbhu3b3hlgb7'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    '__captcha/site/captcha' => 'lsgaru'
+    '__captcha/site/captchacount' => 1
+    'error' => 'Sorry, we are unable to approve your email - we awfully sorry. Register with another your valid email.'
+    '__id' => '2'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://news/index.php?r=site%2Fregister'
+    'HTTP_COOKIE' => '_csrf=965f2e745da0ae0cea0a7ecb5dcd50cb9f0aa39127a3ace2454949dfd20fd806a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22l0lVsLQYQNn9k80BnfLqd307y3fEaA0i%22%3B%7D; PHPSESSID=rak1j15kmic47njbhu3b3hlgb7'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '270'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '46932'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fregister'
+    'REQUEST_URI' => '/index.php?r=site%2Fregister'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486857425.597
+    'REQUEST_TIME' => 1486857425
+]
+2017-02-12 01:59:58 [127.0.0.1][-][rak1j15kmic47njbhu3b3hlgb7][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: user' in /srv/Sites/news/app/models/SignupForm.php:124
+Stack trace:
+#0 /srv/Sites/news/app/controllers/SiteController.php(83): app\models\SignupForm->sendApproveEmail()
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionRegister()
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array()
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#6 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#7 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#8 {main}
+2017-02-12 01:59:57 [127.0.0.1][-][rak1j15kmic47njbhu3b3hlgb7][info][application] $_GET = [
+    'r' => 'site/register'
+]
+
+$_POST = [
+    '_csrf' => 'bm8uMC1FY3ICX0JmXgkyKz8hQAlGfVMwAAliQUl2U0UXXEh1TARTGw=='
+    'SignupForm' => [
+        'username' => 'user1'
+        'email' => 'user1@mail.ruru'
+        'password' => 'pass_to_news'
+        'password_repeat' => 'pass_to_news'
+        'verifyCode' => 'aimocu'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf' => '965f2e745da0ae0cea0a7ecb5dcd50cb9f0aa39127a3ace2454949dfd20fd806a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"l0lVsLQYQNn9k80BnfLqd307y3fEaA0i\";}'
+    'PHPSESSID' => 'rak1j15kmic47njbhu3b3hlgb7'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    '__captcha/site/captcha' => 'diaoiav'
+    '__captcha/site/captchacount' => 1
+    'error' => 'Sorry, we are unable to approve your email - we awfully sorry. Register with another your valid email.'
+    '__id' => '2'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://news/index.php?r=site%2Fregister'
+    'HTTP_COOKIE' => '_csrf=965f2e745da0ae0cea0a7ecb5dcd50cb9f0aa39127a3ace2454949dfd20fd806a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22l0lVsLQYQNn9k80BnfLqd307y3fEaA0i%22%3B%7D; PHPSESSID=rak1j15kmic47njbhu3b3hlgb7'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '269'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '46972'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fregister'
+    'REQUEST_URI' => '/index.php?r=site%2Fregister'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486857597.697
+    'REQUEST_TIME' => 1486857597
+]
+2017-02-12 02:02:26 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\controllers\Person' not found' in /srv/Sites/news/app/controllers/SiteController.php:177
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array()
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#5 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#6 {main}
+2017-02-12 02:02:26 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'site/approval-email'
+    'token' => 'Gt=GoGOTSTF-6mnOIDJOgBFQRT4ZIVXM3'
+]
+
+$_COOKIE = [
+    '_csrf' => '965f2e745da0ae0cea0a7ecb5dcd50cb9f0aa39127a3ace2454949dfd20fd806a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"l0lVsLQYQNn9k80BnfLqd307y3fEaA0i\";}'
+    'PHPSESSID' => 'rak1j15kmic47njbhu3b3hlgb7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=965f2e745da0ae0cea0a7ecb5dcd50cb9f0aa39127a3ace2454949dfd20fd806a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22l0lVsLQYQNn9k80BnfLqd307y3fEaA0i%22%3B%7D; PHPSESSID=rak1j15kmic47njbhu3b3hlgb7'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '47028'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Fapproval-email&token=Gt=GoGOTSTF-6mnOIDJOgBFQRT4ZIVXM3'
+    'REQUEST_URI' => '/index.php?r=site%2Fapproval-email&token=Gt=GoGOTSTF-6mnOIDJOgBFQRT4ZIVXM3'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486857746.838
+    'REQUEST_TIME' => 1486857746
+]
+2017-02-12 02:15:06 [127.0.0.1][-][rak1j15kmic47njbhu3b3hlgb7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "3Dsite/approval-email".' in /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('3Dsite/approval...', Array)
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Страница не найдена.' in /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#2 {main}
+2017-02-12 02:15:05 [127.0.0.1][-][rak1j15kmic47njbhu3b3hlgb7][info][application] $_GET = [
+    'r' => '3Dsite/approval-email'
+    'token' => '3DGt=GoGOTSTF-6mnOIDJOgBFQRT4ZIVXM3'
+]
+
+$_COOKIE = [
+    '_csrf' => '965f2e745da0ae0cea0a7ecb5dcd50cb9f0aa39127a3ace2454949dfd20fd806a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"l0lVsLQYQNn9k80BnfLqd307y3fEaA0i\";}'
+    'PHPSESSID' => 'rak1j15kmic47njbhu3b3hlgb7'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'error' => -1
+    ]
+    '__captcha/site/captcha' => 'ciyibed'
+    '__captcha/site/captchacount' => 1
+    'error' => 'Sorry, we are unable to approve your email - we awfully sorry. Register with another your valid email.'
+    '__id' => '2'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => '_csrf=965f2e745da0ae0cea0a7ecb5dcd50cb9f0aa39127a3ace2454949dfd20fd806a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22l0lVsLQYQNn9k80BnfLqd307y3fEaA0i%22%3B%7D; PHPSESSID=rak1j15kmic47njbhu3b3hlgb7'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '47100'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=3Dsite%2Fapproval-email&token=3DGt=GoGOTSTF-6mnOIDJOgBFQRT4ZIVXM3'
+    'REQUEST_URI' => '/index.php?r=3Dsite%2Fapproval-email&token=3DGt=GoGOTSTF-6mnOIDJOgBFQRT4ZIVXM3'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1486858505.792
+    'REQUEST_TIME' => 1486858505
+]

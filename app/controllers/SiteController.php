@@ -9,6 +9,7 @@ use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
+use app\models\Person;
 use app\models\LoginForm;
 use app\models\ContactForm;
 use app\models\PasswordResetRequestForm;
@@ -176,11 +177,10 @@ class SiteController extends Controller {
     public function actionApprovalEmail($token) {
         $model = new Person;  
         
-        if ($user = $model->approvement($token)) {
+        if ($user = $model->approvement($token) 
+                && (Yii::$app->getUser()->login($user))) {
             \Yii::$app->session->setFlash('success', 'New user now is registered.');
-            return $this->render('room', [
-                'user' => $user,
-            ]);
+            return $this->render('room');
         } else {
             \Yii::$app->session->setFlash('warning', 'Bad link - registration unaviable!');
             return $this->redirect(['site/login']);

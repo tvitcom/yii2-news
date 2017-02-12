@@ -94,10 +94,10 @@ class SignupForm extends Model {
         ]);
 
         if (!$user) {
-            throw new InvalidParamException('Error send approve mail to new user!!!');
+            throw new InvalidParamException('Error send mail - the user not found');
         }
         
-        if ($approval_token = $this->createSecretLink($user->auth_key.$user->id)) {
+        if ($approval_token = $this->createSecretLink($user->auth_key)) {
          return Yii::$app
                 ->mailer
                 ->compose(
@@ -111,15 +111,18 @@ class SignupForm extends Model {
                 ->setTo($this->email)
                 ->setSubject('E-mail approval for ' . Yii::$app->name)
                 ->send();   
+        } else {
+            throw new InvalidParamException('Error create token for approve email');
         }
     }
     
     /**
      * Create secret link for the user as uniq secrete link
      */
-    private function createSecretLink($user='') {
-        if ($user == true) {
-            return md5($user->auth_key);
+    private function createSecretLink($str='') {
+        //some shamanian procedure:)
+        if ($str == true) {
+            return $str;
         } else {
             return null;
         }
