@@ -22,6 +22,9 @@ $config = [
             'identityClass' => 'app\models\Person',
             'enableAutoLogin' => true,
         ],
+        'authManager' => [
+            'class' => 'yii\rbac\PhpManager',
+        ],
         'view' => [
             'theme' => [
                 'basePath' => '@app/themes/basic',

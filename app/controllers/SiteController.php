@@ -57,8 +57,13 @@ class SiteController extends Controller {
                 'class' => 'yii\web\ErrorAction',
             ],
             'captcha' => [
+                /*
+                 * // Ordinary captcha!!!
                 'class' => 'yii\captcha\CaptchaAction',
                 'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
+                 */
+                'class' => 'app\components\MathCaptchaAction',
+                'fixedVerifyCode' => YII_ENV_TEST ? '42' : null,
             ],
         ];
     }
