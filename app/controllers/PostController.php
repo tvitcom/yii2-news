@@ -3,16 +3,16 @@
 namespace app\controllers;
 
 use Yii;
-use app\models\Person;
+use app\models\Post;
 use yii\data\ActiveDataProvider;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * PersonController implements the CRUD actions for Person model.
+ * PostController implements the CRUD actions for Post model.
  */
-class PersonController extends Controller
+class PostController extends Controller
 {
     /**
      * @inheritdoc
@@ -45,13 +45,13 @@ class PersonController extends Controller
     }
 
     /**
-     * Lists all Person models.
+     * Lists all Post models.
      * @return mixed
      */
     public function actionIndex()
     {
         $dataProvider = new ActiveDataProvider([
-            'query' => Person::find(),
+            'query' => Post::find(),
         ]);
 
         return $this->render('index', [
@@ -60,7 +60,7 @@ class PersonController extends Controller
     }
 
     /**
-     * Displays a single Person model.
+     * Displays a single Post model.
      * @param string $id
      * @return mixed
      */
@@ -72,13 +72,13 @@ class PersonController extends Controller
     }
 
     /**
-     * Creates a new Person model.
+     * Creates a new Post model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new Person();
+        $model = new Post();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
@@ -90,7 +90,7 @@ class PersonController extends Controller
     }
 
     /**
-     * Updates an existing Person model.
+     * Updates an existing Post model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param string $id
      * @return mixed
@@ -109,7 +109,7 @@ class PersonController extends Controller
     }
 
     /**
-     * Deletes an existing Person model.
+     * Deletes an existing Post model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param string $id
      * @return mixed
@@ -122,15 +122,15 @@ class PersonController extends Controller
     }
 
     /**
-     * Finds the Person model based on its primary key value.
+     * Finds the Post model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param string $id
-     * @return Person the loaded model
+     * @return Post the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Person::findOne($id)) !== null) {
+        if (($model = Post::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
