@@ -1,7 +1,7 @@
 <?php
 return [
     2 => [
-        'author',
+        'moder',
     ],
     1 => [
         'admin',

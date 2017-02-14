@@ -78,6 +78,26 @@ class RbacController extends Controller
         $auth->addChild($author, $updateOwnPost);
          */
         
+        // добавляем разрешение "createPerson"
+        $createPerson = $auth->createPermission('createPerson');
+        $createPerson->description = 'Create a person';
+        $auth->add($createPerson);
+        
+        // добавляем разрешение "readPost"
+        $readPerson = $auth->createPermission('readPerson');
+        $readPerson->description = 'Read info about person';
+        $auth->add($readPerson);
+        
+        // добавляем разрешение "updatePerson"
+        $updatePerson = $auth->createPermission('updatePerson');
+        $updatePerson->description = 'Update info about person';
+        $auth->add($updatePerson);
+        
+        // добавляем разрешение "createPost"
+        $deletePerson = $auth->createPermission('deletePerson');
+        $deletePerson->description = 'Delete info about person';
+        $auth->add($deletePerson);
+        
         // добавляем роль "admin" и даём роли разрешение "updatePost"
         // а также все разрешения роли "author"
         $admin = $auth->createRole('admin');
