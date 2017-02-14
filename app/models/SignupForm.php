@@ -75,9 +75,9 @@ class SignupForm extends Model {
         $user->created_at = '2000-01-01 00:00:00';
         $user->updated_at = '2000-01-01 00:00:00';
 
-         //adding RBAC assign default role:'author':
+        //adding RBAC assign default role:'reader':
         $auth = Yii::$app->authManager;
-        $authorRole = $auth->getRole('author');
+        $authorRole = $auth->getRole('reader');
         $auth->assign($authorRole, $user->getId());
         
         if ($user->save())
