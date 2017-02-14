@@ -127,7 +127,12 @@ class SiteController extends Controller {
     public function actionRecoveryPassword() {
         $model = new PasswordResetRequestForm();
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
-            if ($model->sendEmail()) {
+            /* @var $user Person */
+            $user = Person::findOne([
+                'status' => Person::STATUS_ACTIVE,
+                'email' => $model->email,
+            ]);
+            if ($model->sendResetLink($user)) {
                 Yii::$app->session->setFlash('success', 'Check your email for '
                     . 'further instructions.');
                 return $this->render('thanks');

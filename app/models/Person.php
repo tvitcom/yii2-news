@@ -228,6 +228,7 @@ class Person extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface 
      */
     public function generatePasswordResetToken() {
         $this->password_reset_token = Yii::$app->security->generateRandomString() . '_' . time();
+        return $this->password_reset_token;
     }
 
     /**
