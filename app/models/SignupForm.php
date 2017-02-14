@@ -3,6 +3,7 @@
 namespace app\models;
 
 use Yii;
+use yii\rbac\PhpManager;
 use yii\base\Model;
 use app\models\Person;
 use yii\captcha\Captcha;
@@ -76,9 +77,9 @@ class SignupForm extends Model {
         $user->updated_at = '2000-01-01 00:00:00';
 
         //adding RBAC assign default role:'reader':
-        $auth = Yii::$app->authManager;
-        $authorRole = $auth->getRole('reader');
-        $auth->assign($authorRole, $user->getId());
+        //$auth = Yii::$app->authManager;
+        //$authorRole = $auth->getRole('reader');
+        //$auth->assign($authorRole, $user->getId());
         
         if ($user->save())
             return $user;
