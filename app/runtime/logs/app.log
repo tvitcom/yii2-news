@@ -571,3 +571,204 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1487113018.578
     'REQUEST_TIME' => 1487113018
 ]
+2017-02-15 01:17:52 [127.0.0.1][-][ssuckrp0b3pmce9frqmlr07p50][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: token' in /srv/Sites/news/app/models/PasswordResetRequestForm.php:58
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionRecoveryPassword()
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array()
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#6 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#7 {main}
+2017-02-15 01:17:52 [127.0.0.1][-][ssuckrp0b3pmce9frqmlr07p50][info][application] $_GET = [
+    'r' => 'site/recovery-password'
+]
+
+$_POST = [
+    '_csrf' => 'TDQuSEgtUEsZZ2oNcR4gMQRtZgIYXT0hCAxMKilkCA4aDFQ9IGcmDw=='
+    'PasswordResetRequestForm' => [
+        'email' => 'user4@mail.ruru'
+        'verifyCode' => '82'
+    ]
+]
+
+$_COOKIE = [
+    'SESSID' => 'ssuckrp0b3pmce9frqmlr07p50'
+    '_csrf' => '8db3c91463722e4108d2cb1dfa57a481c50f48197d7b1cb7ccf9f75f2402223ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"USDE93pzHYHJPpmjD8bbaIXEV8zuhJvD\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 46
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://news/index.php?r=site%2Frecovery-password'
+    'HTTP_COOKIE' => 'SESSID=ssuckrp0b3pmce9frqmlr07p50; _csrf=8db3c91463722e4108d2cb1dfa57a481c50f48197d7b1cb7ccf9f75f2402223ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22USDE93pzHYHJPpmjD8bbaIXEV8zuhJvD%22%3B%7D'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '164'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '56696'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Frecovery-password'
+    'REQUEST_URI' => '/index.php?r=site%2Frecovery-password'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1487114272.081
+    'REQUEST_TIME' => 1487114272
+]
+2017-02-15 01:19:09 [127.0.0.1][-][ssuckrp0b3pmce9frqmlr07p50][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: token' in /srv/Sites/news/app/models/PasswordResetRequestForm.php:58
+Stack trace:
+#0 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): app\controllers\SiteController->actionRecoveryPassword()
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array()
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction()
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest()
+#6 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#7 {main}
+2017-02-15 01:19:09 [127.0.0.1][-][ssuckrp0b3pmce9frqmlr07p50][info][application] $_GET = [
+    'r' => 'site/recovery-password'
+]
+
+$_POST = [
+    '_csrf' => 'dXRBN1h1dkMgJwVyYUYGOT0tCX0IBRspMUwjVTk8LgYjTDtCMD8ABw=='
+    'PasswordResetRequestForm' => [
+        'email' => 'user4@mail.ruru'
+        'verifyCode' => '46'
+    ]
+]
+
+$_COOKIE = [
+    'SESSID' => 'ssuckrp0b3pmce9frqmlr07p50'
+    '_csrf' => '8db3c91463722e4108d2cb1dfa57a481c50f48197d7b1cb7ccf9f75f2402223ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"USDE93pzHYHJPpmjD8bbaIXEV8zuhJvD\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 24
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://news/index.php?r=site%2Frecovery-password'
+    'HTTP_COOKIE' => 'SESSID=ssuckrp0b3pmce9frqmlr07p50; _csrf=8db3c91463722e4108d2cb1dfa57a481c50f48197d7b1cb7ccf9f75f2402223ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22USDE93pzHYHJPpmjD8bbaIXEV8zuhJvD%22%3B%7D'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '164'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '56704'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Frecovery-password'
+    'REQUEST_URI' => '/index.php?r=site%2Frecovery-password'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1487114349.856
+    'REQUEST_TIME' => 1487114349
+]
+2017-02-15 01:22:31 [127.0.0.1][-][ssuckrp0b3pmce9frqmlr07p50][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Wrong password recovery token.' in /srv/Sites/news/app/controllers/SiteController.php:162
+Stack trace:
+#0 [internal function]: app\controllers\SiteController->actionResetPassword('3AJSnN9uLCiHGyp...')
+#1 /srv/Sites/news/app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#3 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('reset-password', Array)
+#4 /srv/Sites/news/app/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site/reset-pass...', Array)
+#5 /srv/Sites/news/app/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /srv/Sites/news/app/www/index.php(12): yii\base\Application->run()
+#7 {main}
+2017-02-15 01:22:31 [127.0.0.1][-][ssuckrp0b3pmce9frqmlr07p50][info][application] $_GET = [
+    'r' => 'site/reset-password'
+    'token' => '3AJSnN9uLCiHGypyth8O0NGs5366RQGY_1487113797'
+]
+
+$_COOKIE = [
+    'SESSID' => 'ssuckrp0b3pmce9frqmlr07p50'
+    '_csrf' => '8db3c91463722e4108d2cb1dfa57a481c50f48197d7b1cb7ccf9f75f2402223ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"USDE93pzHYHJPpmjD8bbaIXEV8zuhJvD\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__captcha/site/captcha' => 24
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'news'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:51.0) Gecko/20100101 Firefox/51.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en;q=0.7,uk;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://news/index.php?r=debug%2Fdefault%2Fview&panel=mail&tag=58a38e4551d57'
+    'HTTP_COOKIE' => 'SESSID=ssuckrp0b3pmce9frqmlr07p50; _csrf=8db3c91463722e4108d2cb1dfa57a481c50f48197d7b1cb7ccf9f75f2402223ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22USDE93pzHYHJPpmjD8bbaIXEV8zuhJvD%22%3B%7D'
+    'HTTP_DNT' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'news'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/srv/Sites/news/app/www'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/srv/Sites/news/app/www/index.php'
+    'REMOTE_PORT' => '56710'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Freset-password&token=3AJSnN9uLCiHGypyth8O0NGs5366RQGY_1487113797'
+    'REQUEST_URI' => '/index.php?r=site%2Freset-password&token=3AJSnN9uLCiHGypyth8O0NGs5366RQGY_1487113797'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1487114551.026
+    'REQUEST_TIME' => 1487114551
+]
